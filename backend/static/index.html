@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0c302b">
+    <title>DermAssist · Sistema RAG NoSQL</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="brand" href="/">
+        <span class="brand-mark">D</span>
+        <span><strong>DermAssist</strong><small>RAG · MongoDB</small></span>
+      </a>
+      <p class="nav-caption">ESPACIO DE TRABAJO</p>
+      <nav>
+        <a class="nav-link active" href="#overview">▦ <span>Resumen</span></a>
+        <a class="nav-link" href="#knowledge">▤ <span>Conocimiento</span></a>
+        <a class="nav-link" href="#search">⌕ <span>Buscar y preguntar</span></a>
+        <a class="nav-link" href="#collections">◫ <span>Colecciones</span></a>
+      </nav>
+      <div class="sidebar-note">
+        <span class="pulse" id="status-dot"></span>
+        <div><strong id="sidebar-status">Comprobando MongoDB</strong><small>Estado de la conexión</small></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div><span class="eyebrow">PROYECTO · BASES DE DATOS NoSQL</span><h1>Centro de conocimiento dermatológico</h1></div>
+        <a class="docs-link" href="/docs" target="_blank" rel="noreferrer">Documentación API <span>↗</span></a>
+      </header>
+
+      <section class="hero" id="overview">
+        <div class="hero-copy">
+          <span class="hero-label">SISTEMA RAG MULTIMODAL</span>
+          <h2>Conocimiento organizado.<br><em>Respuestas fundamentadas.</em></h2>
+          <p>Explora información dermatológica con recuperación semántica, búsqueda textual y referencias a las fuentes utilizadas.</p>
+          <a class="button button-light" href="#search">Probar una consulta <span>→</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="skin-icon">✳</div><span class="art-tag tag-top">MongoDB Atlas</span><span class="art-tag tag-bottom">Jina CLIP · 1024d</span></div>
+      </section>
+
+      <section class="section-heading">
+        <div><span class="eyebrow">VISTA GENERAL</span><h2>Tu base de conocimiento</h2></div>
+        <button class="button button-outline" id="refresh-button">↻ Actualizar</button>
+      </section>
+      <div class="stats-grid" id="stats-grid">
+        <article class="stat-card"><span class="stat-icon green">▤</span><div><small>Documentos</small><strong id="documents-count">—</strong></div><span class="stat-foot">documentos de conocimiento</span></article>
+        <article class="stat-card"><span class="stat-icon blue">⠿</span><div><small>Fragmentos</small><strong id="chunks-count">—</strong></div><span class="stat-foot">chunks listos para recuperar</span></article>
+        <article class="stat-card"><span class="stat-icon amber">▧</span><div><small>Imágenes</small><strong id="images-count">—</strong></div><span class="stat-foot">referencias visuales</span></article>
+        <article class="stat-card"><span class="stat-icon lilac">◉</span><div><small>Conexión</small><strong id="connection-state">—</strong></div><span class="stat-foot" id="database-name">MongoDB Atlas</span></article>
+      </div>
+
+      <section class="workspace-grid">
+        <article class="panel knowledge-panel" id="knowledge">
+          <div class="panel-heading"><div><span class="eyebrow">INGESTA</span><h2>Agregar conocimiento</h2></div><span class="step-badge">01</span></div>
+          <p class="muted">Añade un documento para dividirlo y prepararlo para las búsquedas RAG.</p>
+          <form id="ingest-form">
+            <label>Nombre del documento<input name="nombre_archivo" required maxlength="200" placeholder="guia-dermatitis.txt"></label>
+            <div class="form-row"><label>Idioma<select name="idioma"><option value="es">Español</option><option value="en">Inglés</option></select></label><label>Fuente<input name="fuente" placeholder="URL o referencia"></label></div>
+            <label>Contenido<textarea name="contenido_texto" required rows="5" placeholder="Pega aquí el texto dermatológico que quieres indexar..."></textarea></label>
+            <fieldset><legend>Estrategias para comparar</legend><label class="check"><input type="checkbox" name="estrategias" value="fixed-size" checked> Fixed-size</label><label class="check"><input type="checkbox" name="estrategias" value="sentence-aware" checked> Sentence-aware</label><label class="check"><input type="checkbox" name="estrategias" value="semantic" checked> Semantic</label></fieldset>
+            <button class="button button-primary" type="submit">Procesar documento <span>→</span></button>
+          </form>
+          <div class="notice" id="ingest-notice" hidden></div>
+        </article>
+
+        <article class="panel search-panel" id="search">
+          <div class="panel-heading"><div><span class="eyebrow">RECUPERACIÓN</span><h2>Buscar y preguntar</h2></div><span class="step-badge">02</span></div>
+          <p class="muted">Consulta la base de conocimiento o genera una respuesta con contexto recuperado.</p>
+          <form id="search-form">
+            <label>Tu pregunta<textarea name="query" required rows="3" placeholder="Ej. ¿Qué manifestaciones se asocian con psoriasis?"></textarea></label>
+            <div class="form-row"><label>Modo<select name="modo"><option value="vector">Semántico (vectorial)</option><option value="text">Texto completo</option></select></label><label>Estrategia<select name="estrategia_chunking"><option value="">Todas</option><option value="fixed-size">Fixed-size</option><option value="sentence-aware">Sentence-aware</option><option value="semantic">Semantic</option></select></label></div>
+            <div class="form-row"><label>Idioma<input name="idioma" value="es" maxlength="8"></label><label>Resultados<input name="top_k" type="number" min="1" max="20" value="5"></label></div>
+            <div class="button-row"><button class="button button-primary" type="submit" data-mode="search">Buscar fragmentos <span>⌕</span></button><button class="button button-outline" type="button" id="ask-button">Generar respuesta RAG</button></div>
+          </form>
+          <div class="results" id="search-results" aria-live="polite"></div>
+          <div class="image-tools">
+            <h3>Búsqueda multimodal</h3>
+            <form id="image-text-form" class="image-text-form">
+              <label>Buscar imágenes por descripción
+                <input name="query" required placeholder="Ej. lesión rojiza con descamación">
+              </label>
+              <button class="button button-outline" type="submit">Buscar imágenes</button>
+            </form>
+            <form id="image-file-form" class="image-file-form">
+              <label>O comparar una imagen
+                <input name="image" type="file" accept="image/jpeg,image/png,image/webp" required>
+              </label>
+              <button class="button button-outline" type="submit">Buscar similares</button>
+            </form>
+            <form id="image-upload-form" class="image-upload-form">
+              <label>Agregar una imagen al catálogo
+                <input name="image" type="file" accept="image/jpeg,image/png,image/webp" required>
+              </label>
+              <div class="form-row">
+                <label>Región corporal<input name="region_corporal" maxlength="100" placeholder="Ej. codo"></label>
+                <label>Colores<input name="colores" maxlength="300" placeholder="rojizo, blanquecino"></label>
+              </div>
+              <label>Texturas<input name="texturas" maxlength="300" placeholder="descamación"></label>
+              <button class="button button-primary" type="submit">Guardar imagen</button>
+            </form>
+            <div class="notice" id="image-upload-notice" hidden></div>
+            <div class="results" id="image-results" aria-live="polite"></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel collections-panel" id="collections">
+        <div class="panel-heading"><div><span class="eyebrow">MODELO DOCUMENTAL</span><h2>Colecciones MongoDB</h2></div><span class="subtle">Estructura alineada al informe del proyecto</span></div>
+        <div class="collection-grid" id="collection-grid"><p class="muted">Conecta MongoDB para consultar el estado de las colecciones.</p></div>
+      </section>
+
+      <section class="disclaimer"><span>ⓘ</span><p>Herramienta académica de recuperación de información. Las respuestas son apoyo informativo y no sustituyen la valoración, el diagnóstico ni el tratamiento por profesionales de salud.</p></section>
+      <footer><span>DERMASSIST · BASES DE DATOS NoSQL</span><span>FastAPI · MongoDB · RAG</span></footer>
+    </main>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="/static/app.js" defer></script>
+  </body>
+</html>

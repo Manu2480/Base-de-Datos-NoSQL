@@ -1,0 +1,1 @@
+"""DermAssist MongoDB API package."""
