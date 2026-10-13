@@ -20,6 +20,7 @@ from pymongo.errors import OperationFailure, PyMongoError
 from .ai import EMBEDDING_MODEL, embed_image, embed_texts, generate_answer
 from .chunking import STRATEGIES, chunk_text, split_sentences
 from .mongo import COLLECTIONS, close_client, get_database, normalize_for_mongo, serialize_document
+from .services.file_storage import stage_upload
 
 load_dotenv()
 logging.basicConfig(level=os.getenv("LOG_LEVEL", "INFO"))
@@ -30,7 +31,7 @@ app = FastAPI(
     description="API de apoyo académico para información dermatológica con MongoDB y recuperación RAG.",
     version="1.0.0",
 )
-STATIC_DIR = os.path.join(os.path.dirname(__file__), "static")
+STATIC_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "frontend", "static"))
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 
@@ -523,12 +524,13 @@ def update_document(name: str, document_id: str, payload: dict[str, Any]) -> dic
     return serialize_document(collection.find_one({"_id": ObjectId(document_id)}))
 
 
-@app.delete("/api/collections/{name}/{document_id}", status_code=204)
-def delete_document(name: str, document_id: str) -> None:
+@app.delete("/api/collections/{name}/{document_id}")
+def delete_document(name: str, document_id: str) -> Response:
     if not ObjectId.is_valid(document_id):
         raise HTTPException(status_code=422, detail="El identificador debe ser un ObjectId válido.")
     if _collection(name).delete_one({"_id": ObjectId(document_id)}).deleted_count == 0:
         raise HTTPException(status_code=404, detail="No se encontró el documento.")
+    return Response(status_code=204)
 
 
 @app.post("/api/documents", status_code=201)
@@ -538,6 +540,24 @@ def create_knowledge_document(payload: DocumentInput) -> dict[str, Any]:
     result = _collection("documentos_conocimiento").insert_one(data)
     data["_id"] = result.inserted_id
     return serialize_document(data)
+
+
+@app.post("/api/uploads/texts", status_code=201)
+async def stage_text_file(file: UploadFile = File(...)) -> dict[str, Any]:
+    """Stage a text source for the Entrega 2 ingestion pipeline."""
+    return await stage_upload(file, "texts")
+
+
+@app.post("/api/uploads/images", status_code=201)
+async def stage_image_file(file: UploadFile = File(...)) -> dict[str, Any]:
+    """Stage an image source before its GridFS/vector ingestion."""
+    return await stage_upload(file, "images")
+
+
+@app.post("/api/uploads/laboratory", status_code=201)
+async def stage_laboratory_file(file: UploadFile = File(...)) -> dict[str, Any]:
+    """Stage a fictitious or anonymized laboratory JSON record."""
+    return await stage_upload(file, "laboratory")
 
 
 @app.post("/api/ingest", status_code=201)

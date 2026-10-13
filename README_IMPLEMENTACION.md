@@ -35,7 +35,9 @@ El notebook `Scrips COLAB\script Inicializacion.ipynb` contiene un URI que no de
 - `backend/init_db.py`: colecciones, validación JSON Schema e índices.
 - `backend/chunking.py`: fixed-size, sentence-aware y semantic.
 - `backend/ai.py`: cliente HTTP para embeddings Jina y LLM Groq.
-- `backend/static/`: frontend adaptable a móvil, servido por FastAPI.
+- `frontend/static/`: frontend adaptable a móvil, servido por FastAPI.
+- `backend/services/file_storage.py`: staging validado de textos, imágenes y JSON para la Entrega 2.
+- `data/incoming/`: carpetas de entrada; los archivos reales no se versionan.
 - `backend/tests/`: pruebas unitarias para chunking.
 - `docs/API_Y_PLANTILLA.md`: correspondencia detallada RF/endpoint, filtros, índices Atlas y limitaciones.
 
@@ -46,3 +48,45 @@ python -m unittest discover -s backend\tests -v
 ```
 
 La API sirve en local para presentación académica. No usar datos reales de pacientes ni publicar el servidor: esta versión no tiene autenticación, autorización ni controles de privacidad clínica.
+
+## Preparación de archivos para la Entrega 2
+
+La API ofrece estas rutas multipart para preparar los lotes sin insertarlos todavía en MongoDB:
+
+- `POST /api/uploads/texts`: `.txt` y `.md` en `data/incoming/texts/`.
+- `POST /api/uploads/images`: `.jpg`, `.jpeg`, `.png` y `.webp` en `data/incoming/images/`.
+- `POST /api/uploads/laboratory`: JSON UTF-8 válido en `data/incoming/laboratory/`.
+
+La carga estructurada y la creación de `documentos_conocimiento`, `chunks` y `resultados_laboratorio` se realizará mediante un script separado en la Entrega 2.
+
+## Índices vectoriales y datos de demostración
+
+Para crear los índices administrados por Atlas, ejecute el script desde `mongosh`:
+
+```powershell
+mongosh "mongodb+srv://<usuario>:<password>@<cluster>/?retryWrites=true&w=majority" scripts\create_atlas_vector_indexes.js
+```
+
+El script crea `chunks_vector_index` sobre `chunks.embedding` y `imagenes_vector_index` sobre `imagenes.embedding_visual`, ambos con 1024 dimensiones y similitud coseno. No incluya la URI real en archivos del repositorio.
+
+Para cargar datos ficticios mínimos de prueba:
+
+```powershell
+python scripts\seed_demo_data.py
+```
+
+El seeder inserta diagnósticos, síntomas, tratamientos, medicamentos, dos pacientes ficticios, historias, diagnósticos asignados, laboratorios y usuarios. No borra datos existentes ni inserta imágenes o embeddings vectoriales; esos datos requieren el flujo de ingesta y las credenciales de Jina.
+
+## Comprobar la conexión
+
+1. Compruebe que `.env` contiene `MONGODB_URI` y que la IP está autorizada en Atlas.
+2. Ejecute `python -m backend.init_db`. Debe aparecer `Conexión a MongoDB verificada (PING OK.)`.
+3. Inicie la API con `uvicorn backend.main:app --reload`.
+4. En otra terminal ejecute:
+
+```powershell
+Invoke-RestMethod http://127.0.0.1:8000/api/health
+Invoke-RestMethod http://127.0.0.1:8000/api/dashboard
+```
+
+La primera respuesta debe indicar `"mongodb": "connected"` y la segunda debe listar las 14 colecciones. También puede abrir `http://127.0.0.1:8000/docs` y probar `GET /api/health`.

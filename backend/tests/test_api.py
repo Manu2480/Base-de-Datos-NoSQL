@@ -42,10 +42,20 @@ class ApiContractTests(unittest.TestCase):
             "/api/ingest",
             "/api/images",
             "/api/images/search",
+            "/api/uploads/texts",
+            "/api/uploads/images",
+            "/api/uploads/laboratory",
             "/api/users/{user_id}/queries",
             "/api/patients/{patient_id}/history",
         ):
             self.assertIn(path, paths)
+
+    def test_staging_rejects_unsupported_file_extensions(self):
+        response = self.client.post(
+            "/api/uploads/laboratory",
+            files={"file": ("exam.txt", b"not json", "text/plain")},
+        )
+        self.assertEqual(response.status_code, 415)
 
     def test_image_upload_rejects_a_mismatched_file_signature(self):
         response = self.client.post(
