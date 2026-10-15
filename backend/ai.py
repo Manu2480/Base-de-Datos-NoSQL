@@ -1,3 +1,4 @@
+# ENTREGA II
 """Small HTTP clients for Jina embeddings and the Groq chat-completions API."""
 
 from __future__ import annotations

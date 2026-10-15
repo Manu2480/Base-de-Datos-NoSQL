@@ -1,3 +1,5 @@
+# ENTREGA II
+
 # API y correspondencia con la Entrega 1
 
 ## API para la plantilla
@@ -64,7 +66,7 @@ POST /api/rag
 }
 ```
 
-La ingesta usa tres estrategias configurables. Para mantener dependencias livianas, `fixed-size` delimita 256 unidades separadas por espacios con 32 de solapamiento (aproximación de palabras, no el tokenizador de Jina); `sentence-aware` agrupa hasta cinco oraciones con una de solapamiento; `semantic` compara embeddings Jina CLIP de oraciones consecutivas con umbral 0.8 y tope de 256 palabras. Si el docente exige conteo exacto de tokens, se debe sustituir la aproximación `fixed-size` por el tokenizador de Jina y registrar ese cambio en el experimento.
+La ingesta usa tres estrategias configurables. `fixed-size` delimita 256 unidades separadas por espacios con 32 de solapamiento (aproximación de palabras, no el tokenizador de Jina); `sentence-aware` agrupa hasta cinco oraciones con una de solapamiento; `semantic` compara embeddings Jina CLIP de oraciones consecutivas con umbral 0.8 y tope de 256 palabras.
 
 ## Inicialización e índices
 

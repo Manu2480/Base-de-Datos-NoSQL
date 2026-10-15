@@ -1,3 +1,4 @@
+// ENTREGA II
 const $ = (selector) => document.querySelector(selector);
 const toast = (message) => {
   const node = $("#toast");

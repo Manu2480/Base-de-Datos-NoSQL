@@ -1,3 +1,4 @@
+# ENTREGA II
 """Text chunking strategies used by the knowledge-ingestion pipeline."""
 
 from __future__ import annotations
