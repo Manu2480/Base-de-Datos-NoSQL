@@ -48,8 +48,20 @@ class ApiContractTests(unittest.TestCase):
             "/api/uploads/laboratory",
             "/api/users/{user_id}/queries",
             "/api/patients/{patient_id}/history",
+            "/api/patients/{patient_id}/profile",
+            "/api/laboratory-results",
+            "/api/medications",
+            "/api/knowledge-documents",
         ):
             self.assertIn(path, paths)
+
+    def test_patient_profile_rejects_an_invalid_identifier(self):
+        response = self.client.get("/api/patients/no-es-un-id/profile")
+        self.assertEqual(response.status_code, 422)
+
+    def test_patient_create_rejects_an_incomplete_body(self):
+        response = self.client.post("/api/patients", json={"codigo_paciente": "PAC"})
+        self.assertEqual(response.status_code, 422)
 
     def test_staging_rejects_unsupported_file_extensions(self):
         response = self.client.post(

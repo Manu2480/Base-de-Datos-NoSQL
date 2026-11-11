@@ -1,0 +1,21 @@
+Acné: seguridad de la isotretinoína y la doxiciclina
+Fuente: https://medlineplus.gov/spanish/ency/article/000873.htm; https://www.niams.nih.gov/es/informacion-de-salud/acne; https://www.mayoclinic.org/es/diseases-conditions/acne/symptoms-causes/syc-20368047; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Los medicamentos orales para el acné exigen precauciones importantes.
+
+Isotretinoína:
+- Es teratogénica: puede causar malformaciones graves en el feto. Está contraindicada en el embarazo, y las mujeres en edad fértil deben usar métodos anticonceptivos eficaces y hacerse pruebas de embarazo antes, durante y después del tratamiento, bajo un programa de control.
+- Puede producir sequedad intensa de labios, piel y ojos; elevar los lípidos y las enzimas hepáticas, por lo que se piden análisis de control; y se ha relacionado con cambios del ánimo, por lo que se debe vigilar la salud mental.
+- No debe combinarse con tetraciclinas como la doxiciclina por el riesgo de pseudotumor cerebri (hipertensión intracraneal benigna), que se manifiesta con cefalea intensa y alteraciones visuales.
+- No se debe donar sangre durante el tratamiento.
+
+Doxiciclina:
+- Aumenta el riesgo de pseudotumor cerebri, y se contraindica en el embarazo y en niños menores de 8 años porque afecta los dientes y huesos.
+- Provoca fotosensibilidad: se debe usar protector solar y evitar exposición intensa al sol.
+- Se debe tomar con agua y un vaso lleno, sin acostarse enseguida, para evitar irritar el esófago, y separar de lácteos, calcio y hierro.
+
+Otras precauciones: los retinoides tópicos se evitan en el embarazo; el peróxido de benzoilo puede blanquear la ropa y causar irritación.
+
+Consultar de inmediato si aparecen dolor de cabeza intenso, visión borrosa, dolor abdominal fuerte, cambios de ánimo importantes o signos de una reacción alérgica.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

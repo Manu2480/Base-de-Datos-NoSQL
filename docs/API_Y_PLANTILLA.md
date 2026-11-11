@@ -130,14 +130,16 @@ Los vectores deben generarse con `jina-clip-v2` y tener 1024 dimensiones, como s
 
 También se incluye [create_atlas_vector_indexes.js](../scripts/create_atlas_vector_indexes.js), ejecutable con `mongosh`, para crear ambos índices sin copiarlos manualmente desde el panel de Atlas.
 
-## Datos estructurados de demostración
+## Datos en la misma base
 
-[seed_demo_data.py](../scripts/seed_demo_data.py) carga registros sintéticos relacionados para probar diagnósticos por síntomas, tratamientos, historia clínica, secuencia de diagnósticos, riesgos de medicamentos y laboratorios. No elimina registros existentes y no representa pacientes reales.
+El catálogo clínico, los pacientes y los 116 textos viven en `vector_db`. Compose carga `datos/clinico/init/` y, al arrancar la API, `python -m backend.load_conocimiento` guarda el corpus y escribe `diagnostico_id` en los textos de cada afección. Las 12 guías transversales no apuntan a un diagnóstico.
 
-Después de ejecutarlo, use los `ObjectId` que imprime el script en:
+[seed_demo_data.py](../scripts/seed_demo_data.py) es un demo anterior de dos pacientes. No se ejecuta si el catálogo unificado ya está cargado.
+
+Después de `docker compose up --build -d`, use los `ObjectId` de la base en:
 
 ```text
-GET /api/diagnoses?symptoms=Picazón,Descamación
+GET /api/diagnoses?symptoms=Prurito,Descamación
 GET /api/diagnoses/<diagnostico_id>/treatments
 GET /api/patients/<paciente_id>/history
 GET /api/patients/<paciente_id>/diagnosis-sequence
@@ -145,7 +147,7 @@ GET /api/patients/<paciente_id>/medication-risks
 GET /api/users/<usuario_id>/queries
 ```
 
-El seeder no inventa embeddings: para probar `$vectorSearch`, ingrese un documento mediante `POST /api/ingest` con `JINA_API_KEY`, o cargue el dataset no estructurado cuando esté preparado.
+Esta carga no genera los embeddings de los textos: `chunks` queda vacío hasta `POST /api/ingest` con `JINA_API_KEY`. Las imágenes clínicas sí traen un `embedding_visual` sintético de 1024 dimensiones.
 
 ## Verificación de conexión
 

@@ -1,0 +1,21 @@
+Candidiasis cutánea: prevención y precauciones con fármacos
+Fuente: https://medlineplus.gov/spanish/ency/article/000880.htm; https://www.msdmanuals.com/es/hogar/trastornos-de-la-piel/infecciones-fúngicas-de-la-piel/candidiasis-infección-por-levaduras; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+La prevención de la candidiasis cutánea se centra en reducir la humedad y la fricción y en controlar las enfermedades de fondo.
+
+Recomendaciones:
+- Secar bien los pliegues después del baño y mantenerlos aireados.
+- Preferir ropa interior y ropa de algodón, evitando tejidos sintéticos que retienen la humedad.
+- Controlar el peso y el azúcar en sangre, en particular en personas con diabetes.
+- Evitar el uso innecesario de antibióticos de amplio espectro y de corticoides.
+- Cambiar los pañales con frecuencia y limpiar con suavidad.
+- En personas que mantienen las manos mojadas por trabajo, usar guantes de algodón bajo guantes de goma.
+
+Seguridad de los medicamentos:
+- Fluconazol: prolonga el intervalo QT y se evita con medicamentos que tengan el mismo efecto, como la hidroxicloroquina, usada en el lupus cutáneo. También interactúa con otros fármacos metabolizados por el hígado. Debe usarse con cuidado en el embarazo.
+- Corticoides tópicos: no deben aplicarse sobre una candidiasis activa sin cobertura antifúngica.
+- Los antibióticos y los corticoides orales son causas frecuentes de recurrencia; informar al médico cuando aparece una infección tras ellos.
+
+Cuándo consultar: erupciones que no mejoran en una a dos semanas, lesiones extensas, fiebre, dolor al tragar con manchas en la boca, o episodios que se repiten, ya que pueden ser el primer signo de diabetes u otras enfermedades.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

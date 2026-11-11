@@ -4,9 +4,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0c302b">
+    <meta name="theme-color" content="#f7c5d5">
     <title>DermAssist · Sistema RAG NoSQL</title>
-    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="/static/styles.css?v=3">
   </head>
   <body>
     <aside class="sidebar">
@@ -16,10 +16,11 @@
       </a>
       <p class="nav-caption">ESPACIO DE TRABAJO</p>
       <nav>
-        <a class="nav-link active" href="#overview">▦ <span>Resumen</span></a>
-        <a class="nav-link" href="#knowledge">▤ <span>Conocimiento</span></a>
-        <a class="nav-link" href="#search">⌕ <span>Buscar y preguntar</span></a>
-        <a class="nav-link" href="#collections">◫ <span>Colecciones</span></a>
+        <button class="nav-link active" type="button" data-view="resumen">▦ <span>Resumen</span></button>
+        <button class="nav-link" type="button" data-view="pacientes">◉ <span>Pacientes</span></button>
+        <button class="nav-link" type="button" data-view="registro">✎ <span>Registro</span></button>
+        <button class="nav-link" type="button" data-view="consultas">⌕ <span>Consultas</span></button>
+        <button class="nav-link" type="button" data-view="conocimiento">▤ <span>Conocimiento</span></button>
       </nav>
       <div class="sidebar-note">
         <span class="pulse" id="status-dot"></span>
@@ -29,95 +30,230 @@
 
     <main class="main">
       <header class="topbar">
-        <div><span class="eyebrow">PROYECTO · BASES DE DATOS NoSQL</span><h1>Centro de conocimiento dermatológico</h1></div>
+        <div><span class="eyebrow">PROYECTO · BASES DE DATOS NoSQL</span><h1 id="view-title">Centro de conocimiento dermatológico</h1></div>
         <a class="docs-link" href="/docs" target="_blank" rel="noreferrer">Documentación API <span>↗</span></a>
       </header>
 
-      <section class="hero" id="overview">
-        <div class="hero-copy">
-          <span class="hero-label">SISTEMA RAG MULTIMODAL</span>
-          <h2>Conocimiento organizado.<br><em>Respuestas fundamentadas.</em></h2>
-          <p>Explora información dermatológica con recuperación semántica, búsqueda textual y referencias a las fuentes utilizadas.</p>
-          <a class="button button-light" href="#search">Probar una consulta <span>→</span></a>
-        </div>
-        <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="skin-icon">✳</div><span class="art-tag tag-top">MongoDB Atlas</span><span class="art-tag tag-bottom">Jina CLIP · 1024d</span></div>
-      </section>
-
-      <section class="section-heading">
-        <div><span class="eyebrow">VISTA GENERAL</span><h2>Tu base de conocimiento</h2></div>
-        <button class="button button-outline" id="refresh-button">↻ Actualizar</button>
-      </section>
-      <div class="stats-grid" id="stats-grid">
-        <article class="stat-card"><span class="stat-icon green">▤</span><div><small>Documentos</small><strong id="documents-count">—</strong></div><span class="stat-foot">documentos de conocimiento</span></article>
-        <article class="stat-card"><span class="stat-icon blue">⠿</span><div><small>Fragmentos</small><strong id="chunks-count">—</strong></div><span class="stat-foot">chunks listos para recuperar</span></article>
-        <article class="stat-card"><span class="stat-icon amber">▧</span><div><small>Imágenes</small><strong id="images-count">—</strong></div><span class="stat-foot">referencias visuales</span></article>
-        <article class="stat-card"><span class="stat-icon lilac">◉</span><div><small>Conexión</small><strong id="connection-state">—</strong></div><span class="stat-foot" id="database-name">MongoDB Atlas</span></article>
-      </div>
-
-      <section class="workspace-grid">
-        <article class="panel knowledge-panel" id="knowledge">
-          <div class="panel-heading"><div><span class="eyebrow">INGESTA</span><h2>Agregar conocimiento</h2></div><span class="step-badge">01</span></div>
-          <p class="muted">Añade un documento para dividirlo y prepararlo para las búsquedas RAG.</p>
-          <form id="ingest-form">
-            <label>Nombre del documento<input name="nombre_archivo" required maxlength="200" placeholder="guia-dermatitis.txt"></label>
-            <div class="form-row"><label>Idioma<select name="idioma"><option value="es">Español</option><option value="en">Inglés</option></select></label><label>Fuente<input name="fuente" placeholder="URL o referencia"></label></div>
-            <label>Contenido<textarea name="contenido_texto" required rows="5" placeholder="Pega aquí el texto dermatológico que quieres indexar..."></textarea></label>
-            <fieldset><legend>Estrategias para comparar</legend><label class="check"><input type="checkbox" name="estrategias" value="fixed-size" checked> Fixed-size</label><label class="check"><input type="checkbox" name="estrategias" value="sentence-aware" checked> Sentence-aware</label><label class="check"><input type="checkbox" name="estrategias" value="semantic" checked> Semantic</label></fieldset>
-            <button class="button button-primary" type="submit">Procesar documento <span>→</span></button>
-          </form>
-          <div class="notice" id="ingest-notice" hidden></div>
-        </article>
-
-        <article class="panel search-panel" id="search">
-          <div class="panel-heading"><div><span class="eyebrow">RECUPERACIÓN</span><h2>Buscar y preguntar</h2></div><span class="step-badge">02</span></div>
-          <p class="muted">Consulta la base de conocimiento o genera una respuesta con contexto recuperado.</p>
-          <form id="search-form">
-            <label>Tu pregunta<textarea name="query" required rows="3" placeholder="Ej. ¿Qué manifestaciones se asocian con psoriasis?"></textarea></label>
-            <div class="form-row"><label>Modo<select name="modo"><option value="vector">Semántico (vectorial)</option><option value="text">Texto completo</option></select></label><label>Estrategia<select name="estrategia_chunking"><option value="">Todas</option><option value="fixed-size">Fixed-size</option><option value="sentence-aware">Sentence-aware</option><option value="semantic">Semantic</option></select></label></div>
-            <div class="form-row"><label>Idioma<input name="idioma" value="es" maxlength="8"></label><label>Resultados<input name="top_k" type="number" min="1" max="20" value="5"></label></div>
-            <div class="button-row"><button class="button button-primary" type="submit" data-mode="search">Buscar fragmentos <span>⌕</span></button><button class="button button-outline" type="button" id="ask-button">Generar respuesta RAG</button></div>
-          </form>
-          <div class="results" id="search-results" aria-live="polite"></div>
-          <div class="image-tools">
-            <h3>Búsqueda multimodal</h3>
-            <form id="image-text-form" class="image-text-form">
-              <label>Buscar imágenes por descripción
-                <input name="query" required placeholder="Ej. lesión rojiza con descamación">
-              </label>
-              <button class="button button-outline" type="submit">Buscar imágenes</button>
-            </form>
-            <form id="image-file-form" class="image-file-form">
-              <label>O comparar una imagen
-                <input name="image" type="file" accept="image/jpeg,image/png,image/webp" required>
-              </label>
-              <button class="button button-outline" type="submit">Buscar similares</button>
-            </form>
-            <form id="image-upload-form" class="image-upload-form">
-              <label>Agregar una imagen al catálogo
-                <input name="image" type="file" accept="image/jpeg,image/png,image/webp" required>
-              </label>
-              <div class="form-row">
-                <label>Región corporal<input name="region_corporal" maxlength="100" placeholder="Ej. codo"></label>
-                <label>Colores<input name="colores" maxlength="300" placeholder="rojizo, blanquecino"></label>
-              </div>
-              <label>Texturas<input name="texturas" maxlength="300" placeholder="descamación"></label>
-              <button class="button button-primary" type="submit">Guardar imagen</button>
-            </form>
-            <div class="notice" id="image-upload-notice" hidden></div>
-            <div class="results" id="image-results" aria-live="polite"></div>
+      <section class="view active" id="view-resumen">
+        <div class="hero">
+          <div class="hero-copy">
+            <span class="hero-label">SISTEMA RAG MULTIMODAL</span>
+            <h2>Conocimiento organizado.<br><em>Respuestas fundamentadas.</em></h2>
+            <p>Cada sección del menú abre su propia vista: pacientes, registro clínico, consultas por colección y conocimiento RAG.</p>
+            <button class="button button-light" type="button" data-view="pacientes">Abrir pacientes <span>→</span></button>
           </div>
+          <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="skin-icon">✳</div><span class="art-tag tag-top">vector_db</span><span class="art-tag tag-bottom">Jina CLIP · 1024d</span></div>
+        </div>
+        <section class="section-heading">
+          <div><span class="eyebrow">VISTA GENERAL</span><h2>Tu base de conocimiento</h2></div>
+          <button class="button button-outline" id="refresh-button" type="button">↻ Actualizar</button>
+        </section>
+        <div class="stats-grid">
+          <article class="stat-card"><span class="stat-icon pink">▤</span><div><small>Documentos</small><strong id="documents-count">—</strong></div><span class="stat-foot">documentos de conocimiento</span></article>
+          <article class="stat-card"><span class="stat-icon blue">⠿</span><div><small>Fragmentos</small><strong id="chunks-count">—</strong></div><span class="stat-foot">chunks listos para recuperar</span></article>
+          <article class="stat-card"><span class="stat-icon orange">▧</span><div><small>Imágenes</small><strong id="images-count">—</strong></div><span class="stat-foot">referencias visuales</span></article>
+          <article class="stat-card"><span class="stat-icon purple">◉</span><div><small>Conexión</small><strong id="connection-state">—</strong></div><span class="stat-foot" id="database-name">vector_db</span></article>
+        </div>
+        <section class="panel collections-panel">
+          <div class="panel-heading"><div><span class="eyebrow">MODELO DOCUMENTAL</span><h2>Colecciones MongoDB</h2></div></div>
+          <div class="collection-grid" id="collection-grid"><p class="muted">Conecta MongoDB para consultar el estado de las colecciones.</p></div>
+        </section>
+      </section>
+
+      <section class="view" id="view-pacientes" hidden>
+        <div id="patient-list-panel">
+          <div class="panel">
+            <div class="panel-heading"><div><span class="eyebrow">PACIENTES</span><h2>Buscar en la historia clínica</h2></div></div>
+            <p class="muted">Filtros sobre codigo_paciente, nombre_completo, lugar_residencia.ciudad y alergias.sustancia.</p>
+            <form id="patient-filter" class="filter-grid">
+              <label>Código<input name="codigo" placeholder="P-001"></label>
+              <label>Nombre<input name="nombre" placeholder="Nombre o apellido"></label>
+              <label>Ciudad<input name="ciudad" placeholder="Manizales"></label>
+              <label>Alergia<input name="alergia" placeholder="Penicilina"></label>
+              <label class="check"><input type="checkbox" name="solo_vivos"> Solo vivos</label>
+              <button class="button button-primary" type="submit">Consultar</button>
+            </form>
+            <pre class="json-sample" id="patient-filter-json"></pre>
+            <div id="patient-results" class="results"></div>
+          </div>
+        </div>
+        <div id="patient-profile" hidden></div>
+      </section>
+
+      <section class="view" id="view-registro" hidden>
+        <div class="subnav" id="register-tabs">
+          <button class="subnav-link active" type="button" data-register="paciente">Paciente</button>
+          <button class="subnav-link" type="button" data-register="usuario">Usuario</button>
+          <button class="subnav-link" type="button" data-register="historia">Historia</button>
+          <button class="subnav-link" type="button" data-register="diagnostico">Diagnóstico y síntomas</button>
+          <button class="subnav-link" type="button" data-register="laboratorio">Laboratorio</button>
+        </div>
+
+        <article class="panel register-panel active" id="register-paciente">
+          <div class="panel-heading"><div><span class="eyebrow">ALTA</span><h2>Crear paciente</h2></div></div>
+          <p class="muted">El código se asigna al guardar, en la serie DERM-0001.</p>
+          <form id="create-patient" class="stack-form">
+            <label>Nombre completo<input name="nombre_completo" required placeholder="Ana Pérez"></label>
+            <div class="form-row">
+              <label>Fecha de nacimiento<input name="fecha_nacimiento" type="date" required></label>
+              <label>Ciudad<input name="ciudad" required value="Manizales"></label>
+            </div>
+            <label>País<input name="pais" required value="Colombia"></label>
+            <div class="allergy-toolbar">
+              <span>Alergias</span>
+              <button class="button button-outline" type="button" id="add-allergy">Agregar alergia</button>
+            </div>
+            <div id="allergy-list" class="allergy-list"></div>
+            <button class="button button-primary" type="submit">Guardar paciente</button>
+          </form>
+          <pre class="json-sample" id="create-patient-json"></pre>
+          <div class="notice" id="create-patient-notice" hidden></div>
+        </article>
+
+        <article class="panel register-panel" id="register-usuario" hidden>
+          <div class="panel-heading"><div><span class="eyebrow">ACCESO</span><h2>Crear usuario de la aplicación</h2></div></div>
+          <p class="muted">El usuario guarda el historial de consultas RAG. No es el paciente clínico.</p>
+          <form id="create-user" class="stack-form">
+            <div class="form-row">
+              <label>Nombre<input name="nombre" required></label>
+              <label>Correo<input name="correo" type="email" required placeholder="nombre@ucaldas.edu.co"></label>
+            </div>
+            <button class="button button-primary" type="submit">Guardar usuario</button>
+          </form>
+          <pre class="json-sample" id="create-user-json"></pre>
+          <div class="notice" id="create-user-notice" hidden></div>
+        </article>
+
+        <article class="panel register-panel" id="register-historia" hidden>
+          <div class="panel-heading"><div><span class="eyebrow">HISTORIA</span><h2>Abrir una historia médica</h2></div></div>
+          <form id="create-history" class="stack-form">
+            <label>Paciente<select name="paciente_id" id="history-patient" required></select></label>
+            <div class="form-row">
+              <label>Fecha del episodio<input name="fecha" type="date" required></label>
+              <label>Observaciones<input name="observaciones" placeholder="Primera consulta"></label>
+            </div>
+            <button class="button button-primary" type="submit">Crear historia</button>
+          </form>
+          <pre class="json-sample" id="create-history-json"></pre>
+          <div class="notice" id="create-history-notice" hidden></div>
+        </article>
+
+        <article class="panel register-panel" id="register-diagnostico" hidden>
+          <div class="panel-heading"><div><span class="eyebrow">EPISODIO</span><h2>Asociar diagnóstico y síntomas</h2></div></div>
+          <p class="muted">El diagnóstico se agrega al último episodio de la historia elegida. «Sin diagnóstico» se guarda como null. Los síntomas deben existir en el catálogo.</p>
+          <form id="assign-diagnosis" class="stack-form">
+            <div class="form-row">
+              <label>Paciente<select name="paciente_id" id="assign-patient" required></select></label>
+              <label>Historia<select name="historia_medica_id" id="assign-history" required></select></label>
+            </div>
+            <div class="form-row">
+              <label>Diagnóstico<select name="diagnostico_id" id="assign-diagnosis-select"></select></label>
+              <label>Fecha<input name="fecha_diagnostico" type="date" required></label>
+            </div>
+            <label class="check"><input type="checkbox" name="vigente" checked> Diagnóstico vigente</label>
+            <label>Observaciones<input name="observaciones"></label>
+            <fieldset>
+              <legend>Síntomas presentes</legend>
+              <div id="symptom-checks" class="check-grid"></div>
+            </fieldset>
+            <button class="button button-primary" type="submit">Asociar al paciente</button>
+          </form>
+          <pre class="json-sample" id="assign-diagnosis-json"></pre>
+          <div class="notice" id="assign-diagnosis-notice" hidden></div>
+        </article>
+
+        <article class="panel register-panel" id="register-laboratorio" hidden>
+          <div class="panel-heading"><div><span class="eyebrow">LABORATORIO</span><h2>Registrar un examen</h2></div></div>
+          <form id="create-lab" class="stack-form">
+            <div class="form-row">
+              <label>Paciente<select name="paciente_id" id="lab-patient" required></select></label>
+              <label>Historia<select name="historia_medica_id" id="lab-history" required></select></label>
+            </div>
+            <div class="form-row">
+              <label>Fecha<input name="fecha" type="date" required></label>
+              <label>Tipo de examen<input name="tipo_examen" required placeholder="Biopsia"></label>
+            </div>
+            <div class="form-row">
+              <label>Formato<select name="formato"><option>JSON</option><option>TXT</option></select></label>
+              <label>Parámetro<input name="parametro" required placeholder="PASI"></label>
+            </div>
+            <div class="form-row">
+              <label>Valor<input name="valor" required placeholder="4.2"></label>
+              <label>Observaciones<input name="observaciones"></label>
+            </div>
+            <button class="button button-primary" type="submit">Guardar examen</button>
+          </form>
+          <pre class="json-sample" id="create-lab-json"></pre>
+          <div class="notice" id="create-lab-notice" hidden></div>
         </article>
       </section>
 
-      <section class="panel collections-panel" id="collections">
-        <div class="panel-heading"><div><span class="eyebrow">MODELO DOCUMENTAL</span><h2>Colecciones MongoDB</h2></div><span class="subtle">Estructura alineada al informe del proyecto</span></div>
-        <div class="collection-grid" id="collection-grid"><p class="muted">Conecta MongoDB para consultar el estado de las colecciones.</p></div>
+      <section class="view" id="view-consultas" hidden>
+        <div class="query-layout">
+          <nav class="query-menu" id="query-menu"></nav>
+          <article class="panel">
+            <div class="panel-heading"><div><span class="eyebrow">CONSULTA</span><h2 id="query-title">Pacientes</h2></div></div>
+            <p class="muted" id="query-hint"></p>
+            <form id="query-form" class="filter-grid"></form>
+            <pre class="json-sample" id="query-json"></pre>
+            <div id="query-results"></div>
+          </article>
+        </div>
       </section>
 
-      <section class="disclaimer"><span>ⓘ</span><p>Herramienta académica de recuperación de información. Las respuestas son apoyo informativo y no sustituyen la valoración, el diagnóstico ni el tratamiento por profesionales de salud.</p></section>
+      <section class="view" id="view-conocimiento" hidden>
+        <section class="workspace-grid">
+          <article class="panel" id="knowledge">
+            <div class="panel-heading"><div><span class="eyebrow">INGESTA</span><h2>Agregar conocimiento</h2></div><span class="step-badge">01</span></div>
+            <p class="muted">Añade un documento para dividirlo y prepararlo para las búsquedas RAG.</p>
+            <form id="ingest-form">
+              <label>Nombre del documento<input name="nombre_archivo" required maxlength="200" placeholder="guia-dermatitis.txt"></label>
+              <div class="form-row"><label>Idioma<select name="idioma"><option value="es">Español</option><option value="en">Inglés</option></select></label><label>Fuente<input name="fuente" placeholder="URL o referencia"></label></div>
+              <label>Contenido<textarea name="contenido_texto" required rows="5" placeholder="Pega aquí el texto dermatológico que quieres indexar..."></textarea></label>
+              <fieldset><legend>Estrategias para comparar</legend><label class="check"><input type="checkbox" name="estrategias" value="fixed-size" checked> Fixed-size</label><label class="check"><input type="checkbox" name="estrategias" value="sentence-aware" checked> Sentence-aware</label><label class="check"><input type="checkbox" name="estrategias" value="semantic" checked> Semantic</label></fieldset>
+              <button class="button button-primary" type="submit">Procesar documento <span>→</span></button>
+            </form>
+            <div class="notice" id="ingest-notice" hidden></div>
+          </article>
+          <article class="panel" id="search">
+            <div class="panel-heading"><div><span class="eyebrow">RECUPERACIÓN</span><h2>Buscar y preguntar</h2></div><span class="step-badge">02</span></div>
+            <p class="muted">Consulta la base de conocimiento o genera una respuesta con contexto recuperado.</p>
+            <form id="search-form">
+              <label>Tu pregunta<textarea name="query" required rows="3" placeholder="Ej. ¿Qué manifestaciones se asocian con psoriasis?"></textarea></label>
+              <div class="form-row"><label>Modo<select name="modo"><option value="vector">Semántico (vectorial)</option><option value="text">Texto completo</option></select></label><label>Estrategia<select name="estrategia_chunking"><option value="">Todas</option><option value="fixed-size">Fixed-size</option><option value="sentence-aware">Sentence-aware</option><option value="semantic">Semantic</option></select></label></div>
+              <div class="form-row"><label>Idioma<input name="idioma" value="es" maxlength="8"></label><label>Resultados<input name="top_k" type="number" min="1" max="20" value="5"></label></div>
+              <div class="button-row"><button class="button button-primary" type="submit">Buscar fragmentos <span>⌕</span></button><button class="button button-outline" type="button" id="ask-button">Generar respuesta RAG</button></div>
+            </form>
+            <div class="results" id="search-results" aria-live="polite"></div>
+            <div class="image-tools">
+              <h3>Búsqueda multimodal</h3>
+              <form id="image-text-form" class="image-text-form">
+                <label>Buscar imágenes por descripción<input name="query" required placeholder="Ej. lesión rojiza con descamación"></label>
+                <button class="button button-outline" type="submit">Buscar imágenes</button>
+              </form>
+              <form id="image-file-form" class="image-file-form">
+                <label>O comparar una imagen<input name="image" type="file" accept="image/jpeg,image/png,image/webp" required></label>
+                <button class="button button-outline" type="submit">Buscar similares</button>
+              </form>
+              <form id="image-upload-form" class="image-upload-form">
+                <label>Agregar una imagen al catálogo<input name="image" type="file" accept="image/jpeg,image/png,image/webp" required></label>
+                <div class="form-row">
+                  <label>Región corporal<input name="region_corporal" maxlength="100" placeholder="Ej. codo"></label>
+                  <label>Colores<input name="colores" maxlength="300" placeholder="rojizo, blanquecino"></label>
+                </div>
+                <label>Texturas<input name="texturas" maxlength="300" placeholder="descamación"></label>
+                <button class="button button-primary" type="submit">Guardar imagen</button>
+              </form>
+              <div class="notice" id="image-upload-notice" hidden></div>
+              <div class="results" id="image-results" aria-live="polite"></div>
+            </div>
+          </article>
+        </section>
+      </section>
+
       <footer><span>DERMASSIST · BASES DE DATOS NoSQL</span><span>FastAPI · MongoDB · RAG</span></footer>
     </main>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <script src="/static/app.js" defer></script>
+    <script src="/static/app.js?v=4" defer></script>
   </body>
 </html>

@@ -1,0 +1,14 @@
+Psoriasis: precauciones con medicamentos, prevención de brotes y pronóstico
+Fuente: https://medlineplus.gov/spanish/ency/article/000434.htm; https://www.medlineplus.gov/spanish/psoriasis.html; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Aunque no se conoce una forma de prevenir la psoriasis, mantener la piel limpia e hidratada y evitar los desencadenantes ayuda a reducir los brotes. Son recomendables los baños o duchas diarios, sin restregar con fuerza, y cuidar la piel de golpes, rasguños e infecciones.
+
+Contraindicaciones y precauciones clave:
+- Metotrexato: está contraindicado en embarazo, enfermedad del hígado, insuficiencia renal y alcoholismo. Tiene interacciones importantes: el trimetoprim-sulfametoxazol aumenta su toxicidad sobre la médula ósea y puede causar una disminución grave de las células sanguíneas; los antiinflamatorios no esteroideos, como el ibuprofeno, reducen su eliminación por el riñón; y las penicilinas, como la dicloxacilina y la amoxicilina con ácido clavulánico, también disminuyen su aclaramiento.
+- Adalimumab y otros anti-TNF: no se usan con tuberculosis activa o latente sin tratar, con una infección grave activa o con insuficiencia cardiaca moderada a grave. Por la inmunosupresión, aumentan el riesgo de infecciones como el herpes zóster y la celulitis.
+- Calcipotriol: se evita con hipercalcemia o insuficiencia renal grave.
+- Clobetasol: no se usa en menores de 12 años ni de forma prolongada en cara y pliegues.
+
+Pronóstico: la psoriasis puede ser una condición de por vida que, en general, se controla con tratamiento, con alternancia de brotes y remisiones. Se aconseja asistir a un grupo de apoyo si la enfermedad afecta el ánimo. Se debe consultar si la irritación persiste pese al tratamiento o si aparecen dolor articular o fiebre.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

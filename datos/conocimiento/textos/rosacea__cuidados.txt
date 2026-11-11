@@ -1,0 +1,19 @@
+Rosácea: precauciones con corticoides y medicamentos
+Fuente: https://medlineplus.gov/spanish/ency/article/000879.htm; https://www.niams.nih.gov/es/informacion-de-salud/rosacea; https://www.mayoclinic.org/es/diseases-conditions/rosacea/symptoms-causes/syc-20353815; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Un punto crítico en la rosácea es evitar los corticoides tópicos en la cara. Pueden mejorar el enrojecimiento al principio, pero a la larga empeoran la enfermedad, provocan adelgazamiento de la piel, vasos más visibles y brotes de rebote cuando se suspenden; también pueden originar una dermatitis perioral. Por eso están contraindicados en la rosácea los corticoides potentes, como el clobetasol, y se desaconseja el uso de otros sin indicación específica.
+
+Otras precauciones:
+- Doxiciclina: se asocia con pseudotumor cerebri, hace la piel más sensible al sol y no se usa en el embarazo ni en niños pequeños. No debe combinarse con isotretinoína.
+- Isotretinoína: contraindicada en el embarazo; requiere controles de laboratorio y anticoncepción eficaz.
+- Evitar productos con alcohol, mentol, alcanfor y exfoliantes fuertes.
+
+Hábitos recomendados:
+- Protegerse del sol con sombrero y protector solar, que es uno de los desencadenantes más importantes.
+- Evitar el calor excesivo, las comidas picantes y las bebidas alcohólicas si son desencadenantes.
+- Aprender técnicas de manejo del estrés.
+- Maquillaje no comedogénico con tono verdoso puede ayudar a disimular el enrojecimiento.
+
+Consultar sin demora si aparecen dolor ocular, pérdida de visión, ojos muy rojos o sensibilidad a la luz, ya que la rosácea ocular puede dañar la córnea. También si el enrojecimiento se acompaña de fiebre, dolor articular o erupción en otras zonas, para descartar lupus u otras enfermedades.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

@@ -1,0 +1,21 @@
+Tratamiento del acné: tópicos, antibióticos e isotretinoína
+Fuente: https://medlineplus.gov/spanish/ency/article/000873.htm; https://www.niams.nih.gov/es/informacion-de-salud/acne; https://www.mayoclinic.org/es/diseases-conditions/acne/symptoms-causes/syc-20368047; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+El tratamiento del acné depende de la gravedad, y suele requerir semanas a meses para ver resultados. Se busca reducir la producción de sebo, destapar poros, controlar las bacterias y la inflamación, y prevenir cicatrices.
+
+Tratamientos tópicos:
+- Retinoides (tretinoína, adapaleno): normalizan la descamación del folículo y previenen los comedones. Son la base para el mantenimiento.
+- Peróxido de benzoilo: antibacteriano que reduce la inflamación y evita resistencia a antibióticos.
+- Ácido salicílico y ácido azelaico: ayudan a destapar poros y a atenuar manchas.
+- Antibióticos tópicos como la clindamicina, siempre combinados con peróxido de benzoilo para prevenir resistencia.
+
+Tratamiento oral:
+- Antibióticos como la doxiciclina por ciclos limitados (de tres a seis meses) en acné inflamatorio moderado.
+- En mujeres, ciertos anticonceptivos combinados o la espironolactona pueden controlar el componente hormonal.
+- Isotretinoína oral: para el acné grave, nodular o que no responde, o que deja cicatrices. Es muy eficaz, pero tiene efectos adversos importantes.
+
+Cuidado diario: limpiar la cara dos veces al día con un limpiador suave, usar productos "no comedogénicos", protector solar, y evitar reventar las lesiones, que aumenta las cicatrices.
+
+La paciencia es importante: los tópicos tardan de seis a ocho semanas en mostrar mejoría, y puede haber un empeoramiento inicial transitorio. El tratamiento de mantenimiento ayuda a evitar las recaídas.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

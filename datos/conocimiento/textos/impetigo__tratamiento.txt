@@ -1,0 +1,16 @@
+Tratamiento del impétigo: mupirocina, antibióticos orales y medidas locales
+Fuente: https://www.cdc.gov/groupastrep/diseases-public/impetigo-sp.html; https://www.msdmanuals.com/es/professional/enfermedades-infecciosas/infecciones-bacterianas-de-la-piel/impétigo-y-ectima; https://www.mayoclinic.org/es/diseases-conditions/impetigo/symptoms-causes/syc-20352352; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+El tratamiento busca eliminar la bacteria, acelerar la curación y cortar el contagio. La elección depende de cuántas lesiones haya y de si el paciente tiene alergias.
+
+Medidas locales: lavar las lesiones suavemente con agua y jabón, retirar las costras con compresas tibias y cubrir las zonas con gasa para evitar que el niño se rasque y extienda la infección.
+
+Impétigo localizado (pocas lesiones): un antibiótico tópico, como la mupirocina al 2 % aplicada tres veces al día durante cinco a siete días. Es la primera opción cuando la infección es limitada. El ácido fusídico es otra alternativa tópica en muchos países.
+
+Impétigo extenso, ampolloso, con fiebre, ectima o con brotes en colectividades: antibiótico oral durante siete días aproximadamente. Las opciones habituales incluyen la dicloxacilina, la cefalexina y la amoxicilina con ácido clavulánico, que cubren estafilococo y estreptococo. En casos con sospecha de SARM (estafilococo resistente a la meticilina) se usan alternativas como el trimetoprim-sulfametoxazol o la clindamicina según el antibiograma.
+
+Pacientes alérgicos a la penicilina: no deben recibir dicloxacilina ni amoxicilina con ácido clavulánico. Si la alergia no fue grave, la cefalexina puede ser una opción, pero con alergia grave o anafilaxia previa a penicilinas, o alergia a cefalosporinas, se elige un antibiótico de otra familia, por ejemplo un macrólido o la clindamicina, a criterio médico.
+
+La mejoría suele notarse en tres a cinco días. Si no mejora, se debe reevaluar con cultivo.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

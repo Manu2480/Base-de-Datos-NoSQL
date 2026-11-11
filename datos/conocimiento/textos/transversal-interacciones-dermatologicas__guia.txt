@@ -1,0 +1,26 @@
+Interacciones medicamentosas frecuentes en dermatología
+Fuente: Catálogo clínico del proyecto DermAssist (init/02-catalogo.js); https://medlineplus.gov/spanish/ency/article/000434.htm; https://www.mayoclinic.org/es/diseases-conditions/acne/symptoms-causes/syc-20368047
+
+Algunos medicamentos usados en enfermedades de la piel pueden interactuar entre sí o con otros tratamientos, y conviene conocer las combinaciones de mayor riesgo.
+
+Metotrexato (psoriasis y otras enfermedades inflamatorias):
+- Con trimetoprim-sulfametoxazol: aumenta el riesgo de supresión de la médula ósea (descenso de glóbulos blancos, rojos y plaquetas); se evita la combinación.
+- Con antiinflamatorios no esteroideos, como el ibuprofeno: disminuyen la eliminación renal del metotrexato y elevan su toxicidad.
+- Con penicilinas, como la dicloxacilina y la amoxicilina con ácido clavulánico: reducen su eliminación.
+- Contraindicado en el embarazo, en enfermedad hepática grave y en insuficiencia renal.
+
+Doxiciclina e isotretinoína: la combinación aumenta el riesgo de pseudotumor cerebri (hipertensión intracraneal), con cefalea intensa y alteraciones visuales; se evita.
+
+Hidroxicloroquina y fluconazol: ambos prolongan el intervalo QT del electrocardiograma y su combinación puede causar arritmias; en pacientes con lupus que requieran antifúngico se prefiere un tratamiento tópico o se valora el riesgo.
+
+Isotretinoína, doxiciclina y metotrexato: teratogénicos o contraindicados en el embarazo.
+
+Antibióticos y alergia: dicloxacilina y amoxicilina-clavulánico se contraindican en alergia a penicilinas; la cefalexina, en alergia a cefalosporinas o anafilaxia previa a penicilinas.
+
+Escabicidas: la permetrina no se usa en menores de 2 meses; la ivermectina, en peso inferior a 15 kg ni en el embarazo.
+
+Corticoides: el clobetasol no se indica en menores de 12 años.
+
+Recomendación general: informar siempre al médico y al farmacéutico de todos los medicamentos, suplementos y productos naturales que se toman.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

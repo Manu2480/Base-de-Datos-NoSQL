@@ -1,0 +1,54 @@
+services:
+  mongodb:
+    image: mongo:7
+    restart: unless-stopped
+    volumes:
+      - mongodb_data:/data/db
+      - ./datos/clinico/consultas:/consultas:ro
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "127.0.0.1:27017/admin", "--eval", "db.runCommand({ping: 1}).ok"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  datos-clinicos:
+    image: mongo:7
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    restart: "no"
+    volumes:
+      - ./datos/clinico/init:/init:ro
+    entrypoint: ["bash", "-c"]
+    command:
+      - |
+        set -eu
+        count="$$(mongosh "mongodb://mongodb:27017/vector_db" --quiet --eval "db.diagnosticos_dermatologicos.countDocuments({nombre: 'Psoriasis en placas'})")"
+        count="$$(printf '%s' "$$count" | tr -d '[:space:]')"
+        if [ "$$count" != "0" ]; then
+          echo "Catálogo clínico ya presente en vector_db."
+          exit 0
+        fi
+        echo "Cargando catálogo, pacientes e imágenes sintéticas en vector_db..."
+        mongosh "mongodb://mongodb:27017/vector_db" --quiet /init/01-esquema.js /init/02-catalogo.js /init/03-pacientes.js
+
+  api:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      datos-clinicos:
+        condition: service_completed_successfully
+    ports:
+      - "8000:8000"
+    environment:
+      MONGODB_URI: ${DOCKER_MONGODB_URI:-mongodb://mongodb:27017/vector_db}
+      MONGODB_DATABASE: ${MONGODB_DATABASE:-vector_db}
+      JINA_API_KEY: ${JINA_API_KEY:-}
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      GROQ_MODEL: ${GROQ_MODEL:-llama-3.1-8b-instant}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+
+volumes:
+  mongodb_data:

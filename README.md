@@ -10,6 +10,14 @@
 - `scripts/create_atlas_vector_indexes.js`: definiciones de índices vectoriales para Atlas.
 - `backend/mongo.py`: conexión a MongoDB y selección de `vector_db` por defecto.
 
+## Datos
+
+Todo queda en la base `vector_db`.
+
+- `datos/conocimiento/documentos_conocimiento.json`: 116 textos para el RAG. Al arrancar, `python -m backend.load_conocimiento` los guarda en `documentos_conocimiento` y enlaza cada afección con su diagnóstico clínico. `datos/conocimiento/textos/` es la misma información en archivos sueltos.
+- `datos/clinico/`: catálogo, 24 pacientes sintéticos y consultas. Compose los carga en el mismo Mongo de la API. El uso está en [datos/clinico/README.md](datos/clinico/README.md).
+- `datos/imagenes/`: reservada para fotografías. Los embeddings visuales que se cargan son sintéticos.
+
 ## Requisitos y ejecución
 
 - Python 3.10 o superior.
@@ -31,6 +39,15 @@ python -m backend.init_db
 ```
 
 El inicializador ejecuta `admin.command("ping")`, crea las 14 colecciones del esquema, aplica validación `$jsonSchema` y crea los índices convencionales y de texto. No elimina documentos existentes.
+
+Para dejar el catálogo, los pacientes y los textos en el mismo cluster:
+
+```powershell
+mongosh "<URI del cluster>" datos/clinico/init/01-esquema.js datos/clinico/init/02-catalogo.js datos/clinico/init/03-pacientes.js
+python -m backend.load_conocimiento
+```
+
+`01-esquema.js` borra y vuelve a crear las colecciones clínicas. No borra `documentos_conocimiento`, `chunks`, `usuarios`, `consultas` ni `evaluaciones`.
 
 Para crear los índices vectoriales administrados por Atlas:
 
@@ -55,6 +72,28 @@ Las pruebas automatizadas del backend se ejecutan con:
 ```powershell
 python -m unittest discover -s backend\tests -v
 ```
+
+## Ejecución con Docker en Fedora
+
+Desde la raíz del repositorio, con Docker Engine y el complemento Docker Compose instalados:
+
+```bash
+docker compose up --build -d
+docker compose ps
+```
+
+La API queda disponible en <http://localhost:8000>; la documentación interactiva está en <http://localhost:8000/docs>. Compose inicia MongoDB, carga el catálogo clínico en `vector_db` si todavía no está y, al arrancar la API, crea los índices y carga los 116 textos enlazados a cada diagnóstico. Para ver los registros o detener los servicios:
+
+```bash
+docker compose logs -f
+docker compose down
+```
+
+`docker compose down` conserva el volumen. Para volver a cargar el catálogo desde cero, use `docker compose down -v`.
+
+Por defecto se usa el MongoDB local del contenedor. Esta opción sirve para la API y las búsquedas convencionales; MongoDB Community no ofrece los índices `$vectorSearch` de Atlas. Para habilitar las búsquedas vectoriales, configure `DOCKER_MONGODB_URI` en el archivo `.env` con la URI de Atlas antes de iniciar Compose y cree allí los índices vectoriales siguiendo [scripts/create_atlas_vector_indexes.js](scripts/create_atlas_vector_indexes.js). En ese caso también hay que ejecutar en Atlas los scripts de `datos/clinico/init/` y `python -m backend.load_conocimiento`: el cargador de Compose solo llena el Mongo del contenedor. La URI de Docker tiene prioridad sobre `MONGODB_URI` para no cambiar la configuración de ejecución local.
+
+La ingesta que genera embeddings requiere `JINA_API_KEY`; las respuestas RAG también requieren `GROQ_API_KEY`. Añada esos valores al `.env` si va a usar esas funciones. No publique ese archivo ni lo incluya en la imagen Docker.
 
 ## ENTREGA II
 

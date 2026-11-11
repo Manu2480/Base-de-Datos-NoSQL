@@ -1,11 +1,9 @@
 # ENTREGA II
-r"""Carga datos sintéticos mínimos para probar las consultas clínicas de la API.
+r"""Demo mínimo y anterior al catálogo unificado.
 
-No elimina colecciones ni documentos existentes. Ejecutar desde la raíz:
-
-    python scripts\seed_demo_data.py
-
-Los documentos son ficticios y solo sirven para demostración académica.
+El catálogo, los pacientes y los textos de conocimiento se cargan en `vector_db`
+con Docker Compose y `python -m backend.load_conocimiento`. Este script solo
+inserta dos pacientes de ejemplo y se detiene si el catálogo unificado ya existe.
 """
 
 from __future__ import annotations
@@ -33,6 +31,11 @@ def seed() -> None:
 
     initialize()
     database = get_database()
+    if database["diagnosticos_dermatologicos"].find_one({"nombre": "Psoriasis en placas"}, {"_id": 1}):
+        raise SystemExit(
+            "vector_db ya tiene el catálogo clínico unificado (datos/clinico). "
+            "No se cargó el demo para no duplicar síntomas y diagnósticos."
+        )
 
     symptom_ids = [ObjectId(), ObjectId(), ObjectId(), ObjectId()]
     diagnosis_ids = [ObjectId(), ObjectId()]

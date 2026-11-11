@@ -23,6 +23,11 @@ COLLECTION_VALIDATORS = {
                 "idioma": {"bsonType": "string"},
                 "contenido_texto": {"bsonType": "string", "minLength": 1},
                 "fecha": {"bsonType": "date"},
+                "titulo": {"bsonType": "string"},
+                "tema": {"bsonType": "string"},
+                "categoria": {"bsonType": "string"},
+                "fuente": {"bsonType": "string"},
+                "diagnostico_id": {"bsonType": "objectId"},
             },
         }
     },
@@ -74,6 +79,41 @@ COLLECTION_VALIDATORS = {
 }
 
 
+def _allow_unassigned_diagnosis(database) -> None:
+    """Un episodio puede quedar sin diagnóstico del catálogo: diagnostico_id es null."""
+    spec = next(
+        database.list_collections(filter={"name": "diagnosticos_asignados"}),
+        None,
+    )
+    if spec is None:
+        return
+    schema = (spec.get("options") or {}).get("validator", {}).get("$jsonSchema")
+    if not isinstance(schema, dict):
+        return
+    properties = schema.setdefault("properties", {})
+    diagnosis = properties.get("diagnostico_id") or {}
+    kinds = diagnosis.get("bsonType")
+    if kinds == "objectId":
+        kinds = ["objectId"]
+    if isinstance(kinds, list) and "null" in kinds and "diagnostico_id" not in schema.get("required", []):
+        return
+    properties["diagnostico_id"] = {"bsonType": ["objectId", "null"]}
+    required = [name for name in schema.get("required", []) if name != "diagnostico_id"]
+    if required:
+        schema["required"] = required
+    else:
+        schema.pop("required", None)
+    database.command(
+        {
+            "collMod": "diagnosticos_asignados",
+            "validator": {"$jsonSchema": schema},
+            "validationLevel": "strict",
+            "validationAction": "error",
+        }
+    )
+    logger.info("diagnosticos_asignados admite diagnostico_id nulo.")
+
+
 def initialize() -> None:
     database = get_database()
     database.command("ping")
@@ -108,6 +148,15 @@ def initialize() -> None:
         [("fecha", 1), ("idioma", 1)], name="idx_fecha_idioma"
     )
     database["documentos_conocimiento"].create_index(
+        [("nombre_archivo", 1)], unique=True, name="idx_documento_nombre"
+    )
+    database["documentos_conocimiento"].create_index(
+        [("tema", 1)], name="idx_documento_tema"
+    )
+    database["documentos_conocimiento"].create_index(
+        [("diagnostico_id", 1)], name="idx_documento_diagnostico"
+    )
+    database["documentos_conocimiento"].create_index(
         [("nombre_archivo", "text"), ("contenido_texto", "text")],
         name="idx_documentos_texto",
     )
@@ -129,6 +178,7 @@ def initialize() -> None:
     database["resultados_laboratorio"].create_index(
         [("paciente_id", 1), ("fecha", -1)], name="idx_laboratorio_paciente_fecha"
     )
+    _allow_unassigned_diagnosis(database)
     logger.info("Índices normales y de texto listos.")
     logger.info(
         "En Atlas, cree también chunks_vector_index e imagenes_vector_index con "

@@ -1,0 +1,22 @@
+Tratamiento de la candidiasis cutánea
+Fuente: https://medlineplus.gov/spanish/ency/article/000880.htm; https://www.msdmanuals.com/es/hogar/trastornos-de-la-piel/infecciones-fúngicas-de-la-piel/candidiasis-infección-por-levaduras; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+El tratamiento de la candidiasis cutánea combina el antifúngico adecuado con el control de la humedad y de los factores de riesgo.
+
+Antifúngicos tópicos (primera elección en casos localizados):
+- Azoles en crema o polvo, como clotrimazol, miconazol o ketoconazol, una o dos veces al día durante unas dos semanas.
+- La nistatina en crema o polvo es otra opción clásica, aplicada varias veces al día.
+- Terbinafina no es lo más eficaz contra Candida; se prefiere un azol o nistatina.
+
+Antifúngicos orales: se usan en infecciones extensas, resistentes, en inmunodeprimidos o en la afectación de las uñas. El fluconazol es el más empleado. Se debe tener en cuenta que el fluconazol prolonga el intervalo QT y, por lo tanto, la combinación con hidroxicloroquina u otros fármacos con ese efecto aumenta el riesgo de arritmias; en esos pacientes se prefiere el tratamiento tópico o una alternativa, siempre bajo supervisión médica.
+
+Medidas de apoyo:
+- Mantener los pliegues limpios y secos; se puede usar un secador a baja temperatura o talco sin almidón.
+- Usar ropa de algodón holgada y cambiarla si se humedece.
+- Cambiar con frecuencia los pañales de los bebés y dejar la piel al aire.
+- Controlar la glucemia en personas con diabetes.
+- Evitar los corticoides tópicos sin supervisión, porque pueden empeorar la infección.
+
+La mejoría se observa en pocos días, aunque el tratamiento debe completarse para evitar recaídas.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

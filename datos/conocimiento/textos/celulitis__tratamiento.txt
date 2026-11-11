@@ -1,0 +1,21 @@
+Tratamiento de la celulitis: antibióticos y cuidados en casa
+Fuente: https://www.medlineplus.gov/spanish/cellulitis.html; https://www.cdc.gov/groupastrep/diseases-public/cellulitis-sp.html; https://www.mayoclinic.org/es/diseases-conditions/cellulitis/diagnosis-treatment/drc-20370766; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+El tratamiento de la celulitis es con antibióticos, elegidos para cubrir estreptococos y estafilococos. Una infección leve y sin fiebre alta suele manejarse con antibiótico por vía oral durante cinco a diez días; la infección grave o con signos de sepsis requiere hospitalización y antibiótico intravenoso.
+
+Opciones frecuentes por vía oral: dicloxacilina o cefalexina para cubrir estreptococo y estafilococo sensible; la amoxicilina con ácido clavulánico es otra alternativa. Si se sospecha SARM, el médico puede usar trimetoprim-sulfametoxazol, doxiciclina o clindamicina, según el caso.
+
+Pacientes con alergia a la penicilina: la dicloxacilina y la amoxicilina-clavulánico se evitan; la cefalexina se contraindica si hay alergia a cefalosporinas o anafilaxia previa a penicilinas; se escoge entonces otra familia, como clindamicina.
+
+Cuidados en casa:
+- Tomar el antibiótico completo, aunque haya mejoría.
+- Elevar la extremidad afectada para reducir la hinchazón.
+- Aplicar compresas tibias para aliviar el dolor.
+- Limpiar y cubrir cualquier herida.
+- Beber agua y tomar analgésicos según indicación.
+
+Debe notarse mejoría en 48 a 72 horas. Si el enrojecimiento sigue creciendo, si hay fiebre persistente o aparece un absceso, es necesario reevaluar para valorar drenaje o cambio de antibiótico.
+
+La enfermedad puede recurrir, de modo que tratar la causa predisponente (tiña del pie, edema crónico, eccema) es parte del tratamiento.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

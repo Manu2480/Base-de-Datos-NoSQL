@@ -1,0 +1,25 @@
+Medicamentos dermatológicos en el embarazo y la infancia
+Fuente: Catálogo clínico del proyecto DermAssist (init/02-catalogo.js); https://www.mayoclinic.org/es/diseases-conditions/acne/symptoms-causes/syc-20368047; https://medlineplus.gov/spanish/ency/article/000434.htm
+
+El embarazo y la edad pediátrica requieren precauciones especiales en el tratamiento de las enfermedades de la piel.
+
+Embarazo y lactancia:
+- Isotretinoína y acitretina (retinoides orales): están contraindicados porque causan malformaciones graves; se requiere anticoncepción eficaz y pruebas de embarazo.
+- Retinoides tópicos (tretinoína, adapaleno): se evitan.
+- Metotrexato: contraindicado; debe suspenderse antes de buscar embarazo.
+- Doxiciclina y otras tetraciclinas: se evitan, pues afectan el desarrollo de huesos y dientes del feto.
+- Finasterida: no debe manipularla ni tomarla una mujer embarazada.
+- Ivermectina oral: no se recomienda en el embarazo; la permetrina y el azufre son opciones para la sarna.
+- Opciones más seguras: emolientes, corticoides tópicos de baja o media potencia a corto plazo, ácido azelaico y eritromicina o clindamicina tópicas en acné; la fototerapia UVB de banda estrecha en psoriasis y otras enfermedades.
+- El herpes genital durante el embarazo debe comunicarse al equipo obstétrico.
+
+Infancia:
+- Niños y lactantes: absorben más medicamento a través de la piel, por lo que se prefieren potencias bajas de corticoides, especialmente en cara y pliegues; el clobetasol no se usa en menores de 12 años.
+- La permetrina no se emplea en menores de 2 meses; la ivermectina, en niños de menos de 15 kg.
+- La doxiciclina se evita en menores de 8 años.
+- El tacrolimus tópico se autoriza desde los 2 años.
+- Dosis siempre ajustadas al peso y a la edad, bajo indicación médica.
+
+Siempre debe consultarse a un profesional antes de usar cualquier fármaco en embarazadas o niños.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

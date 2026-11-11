@@ -1,0 +1,23 @@
+Tratamiento de la rosácea
+Fuente: https://medlineplus.gov/spanish/ency/article/000879.htm; https://www.niams.nih.gov/es/informacion-de-salud/rosacea; https://www.mayoclinic.org/es/diseases-conditions/rosacea/symptoms-causes/syc-20353815; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+El tratamiento de la rosácea busca controlar los síntomas, ya que no se cura. Se combina el cuidado de la piel, la evitación de desencadenantes y los medicamentos.
+
+Cuidado de la piel:
+- Usar limpiadores suaves y sin alcohol, hidratantes y protector solar de amplio espectro todos los días.
+- Evitar frotar, exfoliar o usar productos astringentes.
+- Identificar y evitar los desencadenantes personales llevando un diario.
+
+Medicamentos tópicos:
+- Metronidazol, ácido azelaico e ivermectina en crema reducen pápulas, pústulas e inflamación.
+- Brimonidina u oximetazolina disminuyen el enrojecimiento temporalmente.
+
+Medicamentos orales: antibióticos de dosis baja, como la doxiciclina en dosis antiinflamatorias, para formas papulopustulosas. En casos graves, la isotretinoína en dosis bajas.
+
+Procedimientos: láser vascular o luz pulsada intensa para los vasitos y el enrojecimiento persistente; cirugía o láser para el rinofima.
+
+Cuidado de los ojos: higiene de los párpados, lágrimas artificiales y, si es necesario, valoración oftalmológica.
+
+La mejoría con tratamiento tópico se aprecia en semanas; los resultados se mantienen con control de desencadenantes y continuidad en el cuidado. Conviene seguimiento regular.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

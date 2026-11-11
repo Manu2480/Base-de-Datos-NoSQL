@@ -20,6 +20,7 @@ from pymongo.errors import OperationFailure, PyMongoError
 
 from .ai import EMBEDDING_MODEL, embed_image, embed_texts, generate_answer
 from .chunking import STRATEGIES, chunk_text, split_sentences
+from .clinical import router as clinical_router
 from .mongo import COLLECTIONS, close_client, get_database, normalize_for_mongo, serialize_document
 from .services.file_storage import stage_upload
 
@@ -34,6 +35,7 @@ app = FastAPI(
 )
 STATIC_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "frontend", "static"))
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
+app.include_router(clinical_router)
 
 
 class DocumentInput(BaseModel):

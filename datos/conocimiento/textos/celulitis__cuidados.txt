@@ -1,0 +1,15 @@
+Celulitis: prevención, interacciones y cuándo acudir a urgencias
+Fuente: https://www.medlineplus.gov/spanish/cellulitis.html; https://www.cdc.gov/groupastrep/diseases-public/cellulitis-sp.html; https://www.mayoclinic.org/es/diseases-conditions/cellulitis/diagnosis-treatment/drc-20370766; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+La mejor prevención es cuidar la integridad de la piel. Limpiar con agua y jabón cualquier corte o raspadura, aplicar un antiséptico o pomada y cubrir con un apósito limpio hasta que cicatrice. Mantener la piel hidratada evita las grietas, y tratar de inmediato la tiña del pie o el eccema cierra las puertas de entrada.
+
+Pacientes con riesgo alto: quienes tienen diabetes, linfedema o mala circulación deben revisar sus pies y piernas a diario, usar calzado cómodo, no andar descalzos y consultar por cualquier herida que no cure. Cuando los episodios se repiten, el médico puede considerar profilaxis antibiótica a largo plazo.
+
+Seguridad de los medicamentos:
+- Los antibióticos penicilínicos (dicloxacilina, amoxicilina-clavulánico) están contraindicados con alergia a penicilinas; la cefalexina, con alergia a cefalosporinas o anafilaxia previa a penicilinas.
+- Pacientes en tratamiento con metotrexato (por ejemplo, para psoriasis) no deben recibir trimetoprim-sulfametoxazol, porque aumenta el riesgo de toxicidad medular, ni penicilinas como dicloxacilina o amoxicilina-clavulánico sin ajuste, porque reducen la eliminación del metotrexato. Debe informarse al médico de todos los medicamentos que se toman.
+- La doxiciclina se evita en el embarazo y se asocia con riesgo de pseudotumor cerebri; con isotretinoína esa combinación está contraindicada.
+
+Acudir a urgencias si aparecen fiebre alta, confusión, enrojecimiento que avanza rápido, dolor muy intenso, ampollas oscuras o la celulitis está cerca de los ojos o en la cara, porque puede extenderse a estructuras vecinas. Una celulitis tratada a tiempo suele resolverse sin secuelas.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.
