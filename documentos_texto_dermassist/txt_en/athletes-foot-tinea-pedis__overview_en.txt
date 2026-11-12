@@ -1,0 +1,12 @@
+Athlete's foot (tinea pedis): symptoms, antifungal treatment and prevention
+Source: https://medlineplus.gov/spanish/ency/article/000875.htm; https://www.mayoclinic.org/es/diseases-conditions/athletes-foot/symptoms-causes/syc-20353841; https://medlineplus.gov/spanish/tineainfections.html; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Athlete's foot is a fungal infection of the skin of the feet caused by dermatophytes, which feed on keratin and thrive in warm, damp places. It spreads through contact with infected people or contaminated surfaces such as shower floors, pool decks, towels and shared shoes. Risk factors include sweaty feet, closed shoes worn for long hours, skin cracks, diabetes and weakened immunity. It can spread to the nails (onychomycosis), hands or groin.
+
+Forms include the interdigital type (white, soggy, peeling skin between the toes that itches and burns, most common), the moccasin type (dry, thick scaling over the sole and heel), and a blistering type. Diagnosis is usually clinical, confirmed with a KOH skin scraping or fungal culture if needed.
+
+Treatment is usually a topical antifungal: terbinafine cream for one to four weeks, or clotrimazole, miconazole or ketoconazole for about four weeks, continued one to two weeks after symptoms disappear. Oral antifungals such as terbinafine or itraconazole are used for extensive, moccasin-type or nail disease. Fluconazole prolongs the QT interval, so it should not be combined with hydroxychloroquine or similar drugs without medical review.
+
+Prevention: dry the feet well, especially between the toes, wear breathable socks and alternate shoes, use sandals in public showers, and do not share towels or footwear. People with diabetes should check their feet daily because cracks can lead to cellulitis. Do not use a steroid cream alone on a fungal infection, as it can mask and worsen it.
+
+Notice: educational text written for academic purposes, adapted from the cited sources; it does not replace evaluation by a health professional.

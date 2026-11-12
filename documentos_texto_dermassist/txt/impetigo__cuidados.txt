@@ -1,0 +1,17 @@
+Impétigo: alergia a la penicilina, prevención del contagio y cuándo consultar
+Fuente: https://www.cdc.gov/groupastrep/diseases-public/impetigo-sp.html; https://www.mayoclinic.org/es/diseases-conditions/impetigo/symptoms-causes/syc-20352352; https://www.cdc.gov/std/treatment-guidelines/penicillin-allergy.htm; https://www.mayoclinic.org/es/diseases-conditions/penicillin-allergy/symptoms-causes/syc-20376222; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Antibióticos a evitar si hay alergia a la penicilina: la dicloxacilina y la amoxicilina con ácido clavulánico pertenecen a la familia de las penicilinas y están contraindicadas en quien tiene esa alergia. La cefalexina es una cefalosporina: el riesgo de reacción cruzada con la penicilina es bajo, pero se contraindica cuando hay alergia a cefalosporinas o una anafilaxia previa a penicilinas. Ante una alergia confirmada, el médico elegirá otras familias, como macrólidos o clindamicina, y la mupirocina tópica no es una penicilina, por lo que puede usarse en lesiones localizadas.
+
+Dato importante: cerca del 90 % de las personas que dicen ser alérgicas a la penicilina no lo son realmente cuando se estudian. Por eso, cuando es posible, se recomienda evaluar la alergia con un especialista, ya que las etiquetas erróneas llevan a usar antibióticos menos eficaces y más caros. Los síntomas de una reacción alérgica incluyen ronchas, picazón, hinchazón de labios o cara, dificultad para respirar, vómitos y, en los casos graves, anafilaxia.
+
+Prevención del contagio:
+- Lavarse las manos con frecuencia y mantener las uñas cortas.
+- No compartir toallas, ropa ni juguetes mientras haya lesiones.
+- Lavar con agua caliente la ropa de cama y las toallas.
+- Mantener al niño fuera de la escuela hasta 24 horas después de empezar el antibiótico, o hasta que las lesiones estén secas o cubiertas.
+- Tratar con prontitud los eccemas y las picaduras.
+
+Consultar de inmediato si aparece fiebre alta, la piel alrededor se vuelve muy roja y dolorosa (posible celulitis), hay hinchazón de cara o párpados u orina de color té.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

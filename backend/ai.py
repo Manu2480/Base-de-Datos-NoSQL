@@ -4,9 +4,11 @@
 from __future__ import annotations
 
 import base64
+import hashlib
 import json
 import math
 import os
+import re
 import urllib.error
 import urllib.request
 from typing import Any
@@ -14,7 +16,9 @@ from typing import Any
 from fastapi import HTTPException
 
 EMBEDDING_MODEL = "jina-clip-v2"
+LOCAL_EMBEDDING_MODEL = "hash-local"
 EMBEDDING_DIMENSIONS = 1024
+_TOKEN = re.compile(r"\w+", re.UNICODE)
 
 
 def _post_json(url: str, api_key: str, payload: dict[str, Any]) -> dict[str, Any]:
@@ -35,6 +39,30 @@ def _post_json(url: str, api_key: str, payload: dict[str, Any]) -> dict[str, Any
         raise HTTPException(status_code=502, detail="No fue posible conectar con el proveedor externo.") from exc
     except (UnicodeDecodeError, json.JSONDecodeError) as exc:
         raise HTTPException(status_code=502, detail="El proveedor externo devolvió una respuesta no válida.") from exc
+
+
+def active_embedding_model() -> str:
+    return EMBEDDING_MODEL if os.getenv("JINA_API_KEY") else LOCAL_EMBEDDING_MODEL
+
+
+def local_text_embedding(text: str) -> list[float]:
+    """1024-d hash of the words in the text, in the same slot the Jina vector uses.
+
+    It lets vector search run on local MongoDB before JINA_API_KEY is set.
+    With the key, embed_texts uses jina-clip-v2 and the corpus is rebuilt in that space.
+    """
+    vector = [0.0] * EMBEDDING_DIMENSIONS
+    tokens = _TOKEN.findall(text.lower())
+    if not tokens:
+        vector[0] = 1.0
+        return vector
+    for token in tokens:
+        digest = hashlib.sha256(token.encode("utf-8")).digest()
+        bucket = int.from_bytes(digest[:2], "big") % EMBEDDING_DIMENSIONS
+        sign = 1.0 if digest[2] & 1 else -1.0
+        vector[bucket] += sign
+    norm = math.sqrt(sum(value * value for value in vector)) or 1.0
+    return [value / norm for value in vector]
 
 
 def _jina_api_key() -> str:
@@ -63,6 +91,8 @@ def _get_vectors(payload: dict[str, Any]) -> list[list[float]]:
 def embed_texts(texts: list[str]) -> list[list[float]]:
     if not texts:
         return []
+    if not os.getenv("JINA_API_KEY"):
+        return [local_text_embedding(text) for text in texts]
     vectors: list[list[float]] = []
     for start in range(0, len(texts), 64):
         batch = texts[start : start + 64]

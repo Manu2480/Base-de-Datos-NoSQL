@@ -1,0 +1,17 @@
+Herpes zóster: complicaciones, interacciones y cuándo acudir a urgencias
+Fuente: https://www.massgeneralbrigham.org/es/health-wellness/signs-and-symptoms-of-shingles; https://www.cigna.com/es-us/knowledge-center/hw/temas-de-salud/culebrilla-hw75433; https://www.quironsalud.com/es/enfermedades-sintomas/herpes-zoster; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Complicaciones posibles del herpes zóster:
+- Neuralgia posherpética: dolor persistente en la zona, la más frecuente, sobre todo en mayores.
+- Zóster oftálmico, con riesgo de daño ocular, úlcera corneal y pérdida visual.
+- Síndrome de Ramsay Hunt, cuando afecta el nervio facial y el oído, con parálisis facial, dolor y vesículas en el oído.
+- Sobreinfección bacteriana de las ampollas, que puede progresar a celulitis.
+- Enfermedad diseminada en inmunodeprimidos y, rara vez, afectación neurológica.
+
+Pacientes inmunosuprimidos por tratamientos dermatológicos: quienes reciben metotrexato, corticoides o biológicos como el adalimumab tienen mayor riesgo de zóster y de formas más graves. Antes de iniciar estos tratamientos conviene revisar el estado de vacunación. Un paciente con psoriasis bajo adalimumab que desarrolla zóster debe comunicarlo de inmediato al médico, que decidirá si se suspende temporalmente el biológico.
+
+Precauciones con los antivirales: se ajustan en insuficiencia renal y requieren buena hidratación. Si el paciente toma metotrexato, debe consultarse antes de combinar con otros fármacos que eliminen por el riñón, ya que su toxicidad aumenta.
+
+Acudir a urgencias si la erupción está cerca del ojo o en la punta de la nariz, si aparece parálisis facial, pérdida de audición, confusión, si la erupción se extiende por varias zonas del cuerpo o si hay fiebre alta. Consultar siempre en las primeras 72 horas para que el antiviral sea más eficaz.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

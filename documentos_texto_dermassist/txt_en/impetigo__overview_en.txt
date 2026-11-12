@@ -1,0 +1,12 @@
+Impetigo: contagious bacterial skin infection, treatment and penicillin allergy
+Source: https://www.cdc.gov/groupastrep/diseases-public/impetigo-sp.html; https://www.msdmanuals.com/es/professional/enfermedades-infecciosas/infecciones-bacterianas-de-la-piel/impétigo-y-ectima; https://www.mayoclinic.org/es/diseases-conditions/impetigo/symptoms-causes/syc-20352352; https://kidshealth.org/CHW/es/parents/impetigo.html; https://www.cdc.gov/std/treatment-guidelines/penicillin-allergy.htm; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Impetigo is a superficial bacterial skin infection, most common in children aged 2 to 5, caused by Staphylococcus aureus or Streptococcus pyogenes. It is contagious and spreads by direct contact with sores or by sharing towels, bedding and toys, especially in schools and nurseries. Bacteria enter through small breaks in the skin such as scratches, insect bites or eczema, so children with atopic dermatitis are at higher risk.
+
+It appears as red sores that burst and form honey-colored crusts, usually around the nose and mouth, on the arms and legs. The bullous form causes larger fluid-filled blisters. Ectyma is a deeper form with ulcers. Fever is uncommon. A rare complication is post-streptococcal glomerulonephritis, a kidney problem.
+
+Treatment: wash gently and soften crusts. For a few localized lesions, topical mupirocin 2% three times daily for five to seven days is the first choice. Extensive or bullous impetigo, or outbreaks, are treated with oral antibiotics for about seven days, such as dicloxacillin, cephalexin or amoxicillin-clavulanate. The person stops being contagious 24 hours after starting treatment.
+
+Penicillin allergy: dicloxacillin and amoxicillin-clavulanate are penicillins and must be avoided. Cephalexin is contraindicated if there is cephalosporin allergy or prior anaphylaxis to penicillins. Alternatives include macrolides or clindamycin, and topical mupirocin is not a penicillin. Many people who think they are allergic to penicillin are not, so allergy testing is worthwhile. Seek care for fever, spreading redness, swelling of the face or dark urine.
+
+Notice: educational text written for academic purposes, adapted from the cited sources; it does not replace evaluation by a health professional.

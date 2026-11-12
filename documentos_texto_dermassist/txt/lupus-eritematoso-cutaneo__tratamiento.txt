@@ -1,0 +1,21 @@
+Lupus cutáneo: desencadenantes y cómo se maneja la enfermedad
+Fuente: https://www.lupus.org/es/az/resources/que-es-el-lupus-cutaneo; https://revactamedica.sld.cu; https://dialnet.unirioja.es/descarga/articulo/9523430.pdf; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+El manejo del lupus cutáneo combina evitar los desencadenantes y recibir tratamiento tópico y sistémico. No se busca solo aliviar la piel, sino prevenir cicatrices permanentes y pérdida de cabello.
+
+Factores que desencadenan o empeoran los brotes:
+- La radiación ultravioleta (UV) de la luz solar y de algunas luces interiores.
+- Algunos medicamentos, en particular en el lupus subagudo: los inhibidores de la bomba de protones, como el omeprazol y el pantoprazol, y ciertos bloqueadores de los canales de calcio. Los síntomas pueden aparecer meses o años después de iniciar el fármaco y mejoran al suspenderlo.
+- Infecciones, estrés y, según varios estudios, el tabaquismo, que se asocia a peor evolución y puede reducir la respuesta a los antipalúdicos, aunque no todos los estudios lo confirman.
+
+Medidas generales: fotoprotección estricta con protector solar de amplio espectro, ropa que cubra la piel, sombrero y evitar la exposición en las horas de mayor radiación.
+
+Tratamiento:
+- Corticoides tópicos de potencia media o alta, e inhibidores tópicos de calcineurina, como el tacrolimus, en lesiones localizadas.
+- Terapia antipalúdica: la hidroxicloroquina es la base del tratamiento sistémico, la más usada y con respuestas favorables en la mayoría de los casos.
+- Si no hay respuesta: otros inmunosupresores clásicos y, más recientemente, biológicos como el anifrolumab.
+- Seguimiento conjunto con reumatología si hay anticuerpos positivos o compromiso sistémico.
+
+La hidroxicloroquina requiere controles oftalmológicos periódicos por el riesgo de maculopatía.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

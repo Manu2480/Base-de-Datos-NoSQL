@@ -8,6 +8,7 @@ from fastapi.testclient import TestClient
 from fastapi import HTTPException
 from pymongo.errors import OperationFailure
 
+from backend.ai import active_embedding_model
 from backend.main import SearchInput, _search_filter, _text_search, _vector_search, app
 
 
@@ -108,6 +109,7 @@ class ApiContractTests(unittest.TestCase):
                 "estrategia_chunking": {"$eq": "sentence-aware"},
                 "idioma": {"$eq": "es"},
                 "fecha": {"$gte": start, "$lte": end},
+                "modelo": {"$eq": active_embedding_model()},
             },
         )
         self.assertEqual(stages[1]["$lookup"]["from"], "documentos_conocimiento")

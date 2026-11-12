@@ -1,0 +1,12 @@
+Scabies: mite infestation, treatment with permethrin and ivermectin
+Source: https://medlineplus.gov/spanish/ency/article/000830.htm; https://www.who.int/es/news-room/fact-sheets/detail/scabies; https://www.mayoclinic.org/es/diseases-conditions/scabies/diagnosis-treatment/drc-20377383; https://www.cdc.gov/scabies/hcp/clinical-care/; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Scabies is a skin infestation by the mite Sarcoptes scabiei. The female burrows under the skin to lay eggs, and the allergic reaction to the mites causes intense itching. It spreads mainly by prolonged skin-to-skin contact, in homes, nurseries, care homes and prisons, and is not related to poor hygiene. Crusted (Norwegian) scabies, with thousands of mites, occurs in immunosuppressed or elderly people and is highly contagious. Symptoms start two to six weeks after a first infestation.
+
+The hallmark is severe itching that is worse at night. Small red bumps and thin wavy burrows appear between the fingers, on the wrists, elbows, armpits, waist, around the nipples and genitals. The face is usually spared in adults. Several household members often itch at the same time. Scratching can lead to bacterial infection and impetigo.
+
+Treatment requires a scabicide and treating all close contacts at the same time. Permethrin 5% cream is first line: apply from the neck down, leave on for 8 to 14 hours, rinse, and repeat after a week. It is not used in infants under 2 months. Oral ivermectin is given as a single dose repeated after 7 to 14 days; it is not used in children under 15 kg or in pregnancy. Wash clothes and bedding in hot water and dry on high heat.
+
+Itching can persist two to four weeks after successful treatment. Strong steroid creams alone can mask scabies. Seek care for yellow crusts, pus or fever, and in infants, older adults and immunosuppressed patients.
+
+Notice: educational text written for academic purposes, adapted from the cited sources; it does not replace evaluation by a health professional.

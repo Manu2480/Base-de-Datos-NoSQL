@@ -1,0 +1,12 @@
+Cutaneous candidiasis: skin yeast infection in folds, treatment and prevention
+Source: https://medlineplus.gov/spanish/ency/article/000880.htm; https://www.msdmanuals.com/es/hogar/trastornos-de-la-piel/infecciones-fúngicas-de-la-piel/candidiasis-infección-por-levaduras; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Cutaneous candidiasis is a skin infection caused by Candida yeasts, mainly Candida albicans, which normally live on the skin and in the gut. It develops when the yeast overgrows in warm, moist, rubbing areas such as the groin, armpits, under the breasts, skin folds, diaper area and between the fingers or toes. Risk factors are humidity and friction, poorly controlled diabetes, obesity, recent antibiotics or corticosteroids, weakened immunity, and prolonged diaper use.
+
+It appears as a bright red, moist, glossy rash with sharply defined edges and characteristic "satellite" small bumps or pustules nearby, with itching and burning. Around the nails it causes painful swelling (paronychia). Diagnosis is clinical, with a KOH scraping or culture if it does not respond. It can resemble ringworm, inverse psoriasis or seborrheic dermatitis. Recurrent episodes may be the first sign of diabetes.
+
+Treatment combines an antifungal with moisture control. Topical azoles (clotrimazole, miconazole, ketoconazole) or nystatin are used for about two weeks. Oral fluconazole is used for extensive, resistant or immunocompromised cases; because fluconazole prolongs the QT interval, it must not be combined with hydroxychloroquine, so patients with lupus usually receive a topical agent. Keep folds clean and dry, wear loose cotton clothing, change diapers often and control blood sugar.
+
+Do not apply steroid creams to active candidiasis without antifungal cover. See a doctor for extensive rash, fever, mouth sores that make eating difficult, or frequent recurrences.
+
+Notice: educational text written for academic purposes, adapted from the cited sources; it does not replace evaluation by a health professional.

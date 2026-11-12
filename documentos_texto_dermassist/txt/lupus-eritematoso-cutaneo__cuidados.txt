@@ -1,0 +1,20 @@
+Lupus cutáneo: contraindicaciones, interacciones y seguimiento
+Fuente: https://www.lupus.org/es/az/resources/que-es-el-lupus-cutaneo; https://revactamedica.sld.cu; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+La seguridad de los medicamentos es un punto central en el lupus cutáneo, porque el tratamiento es prolongado.
+
+Hidroxicloroquina:
+- Está contraindicada o se usa con extrema precaución en personas con maculopatía previa, con intervalo QT prolongado y con alergia a las 4-aminoquinolinas.
+- Interacción relevante: el fluconazol y la hidroxicloroquina prolongan ambos el intervalo QT, por lo que su combinación puede provocar arritmias. Un paciente con lupus que desarrolle una candidiasis cutánea no debería recibir fluconazol sin valorar este riesgo; se prefiere un antifúngico tópico.
+- Se recomienda un examen oftalmológico basal y controles periódicos.
+
+Corticoides tópicos: no se usan sobre infecciones cutáneas sin tratar, ni de forma prolongada en la cara; en pacientes con rosácea están contraindicados, porque la empeoran.
+
+Hábitos y prevención:
+- Protección solar diaria, incluso en días nublados y en interiores con luz intensa.
+- Revisar con el médico los medicamentos de uso frecuente, como los protectores gástricos, ante un posible lupus inducido por fármacos.
+- Cuidar las cicatrices y la alopecia cicatricial con valoración temprana, porque el tratamiento precoz evita el daño permanente.
+
+El seguimiento debe ser conjunto entre dermatología y reumatología, con vigilancia periódica de los anticuerpos, la función renal y los síntomas sistémicos. Cerca del 17 % de quienes tienen lupus discoide pueden desarrollar LES con los años, de modo que conviene consultar ante cansancio persistente, dolor articular, fiebre o cambios en la orina.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

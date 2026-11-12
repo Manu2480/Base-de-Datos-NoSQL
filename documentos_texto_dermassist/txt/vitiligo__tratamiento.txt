@@ -1,0 +1,22 @@
+Tratamiento del vitíligo: opciones médicas, quirúrgicas y de apoyo
+Fuente: https://www.niams.nih.gov/sites/default/files/catalog/files/vitiligo_ff_espanol.pdf; https://www.mayoclinic.org/es-es/diseases-conditions/vitiligo/symptoms-causes/syc-20355912; https://kidshealth.org/CHW/es/parents/vitiligo.html; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+El vitíligo no tiene una cura definitiva. El tratamiento puede detener o retrasar la progresión y devolver parte del color, pero no previene nuevas manchas ni garantiza que la repigmentación se mantenga. La elección depende de la edad, el número y la extensión de las manchas, su ubicación, qué tan rápido avanzan y la preferencia de la persona.
+
+Opciones médicas:
+- Corticoides tópicos, útiles en manchas recientes y pequeñas, con cuidado en la cara.
+- Inhibidores tópicos de calcineurina, como el tacrolimus al 0,1 %, que se usan en zonas sensibles como el rostro y ahorran corticoides.
+- Fototerapia con luz ultravioleta B de banda estrecha, una de las opciones más eficaces en vitíligo extenso; la respuesta es gradual y tarda meses.
+- Medicamentos que bloquean las proteínas JAK, como una crema aprobada en algunos países, que se basan en el mecanismo inmunitario de la enfermedad.
+- Corticoides orales, en ciclos cortos en casos de progresión rápida.
+
+Opciones quirúrgicas: injertos de piel pigmentada tomada de zonas sanas, en manchas estables.
+
+Otros apoyos:
+- Protector solar de amplio espectro, porque las manchas se queman con facilidad y el bronceado del resto de la piel las hace destacar más.
+- Cosméticos y tintes que cubren las manchas.
+- Consejería psicológica y grupos de apoyo, pues la enfermedad puede afectar la autoestima.
+
+La cara y el tronco responden mejor al tratamiento que las manos y los pies. Las manchas recientes tratadas pronto responden mejor, aunque puede haber pérdida parcial de la pigmentación recuperada al suspender el tratamiento.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

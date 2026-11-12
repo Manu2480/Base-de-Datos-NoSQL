@@ -1,0 +1,12 @@
+Rosacea: persistent facial redness, how it differs from acne and treatment
+Source: https://medlineplus.gov/spanish/ency/article/000879.htm; https://www.niams.nih.gov/es/informacion-de-salud/rosacea; https://www.mayoclinic.org/es/diseases-conditions/rosacea/symptoms-causes/syc-20353815; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Rosacea is a chronic inflammatory skin disease of the face causing persistent redness, visible small blood vessels and sometimes acne-like bumps. It usually appears between ages 30 and 50, more often in women and people with fair skin, though men can develop worse forms such as nose thickening (rhinophyma). The cause is unknown; genetics, blood vessel changes, inflammation and Demodex mites may play a role. Triggers include sun, heat, wind, hot drinks, alcohol, spicy food, stress and temperature changes. Subtypes include erythematotelangiectatic, papulopustular, phymatous and ocular rosacea (red, gritty, irritated eyes).
+
+How it differs from acne: rosacea has no blackheads or whiteheads, shows flushing and persistent central facial redness with a burning or stinging sensation, and appears in adulthood. Acne has comedones, oily skin and starts in adolescence. They can coexist.
+
+There is no cure, but it can be controlled. Use gentle cleansers, moisturizer and daily broad-spectrum sunscreen, and avoid personal triggers. Topical metronidazole, azelaic acid or ivermectin cream reduce bumps; brimonidine reduces redness temporarily. Low-dose oral doxycycline is used for papulopustular disease, and low-dose isotretinoin in severe cases. Laser or intense pulsed light treat visible vessels.
+
+Precautions: topical corticosteroids on the face are contraindicated because they worsen rosacea and cause rebound flares. Doxycycline carries a risk of pseudotumor cerebri and sun sensitivity, and isotretinoin is contraindicated in pregnancy. Eye pain or vision changes need urgent assessment.
+
+Notice: educational text written for academic purposes, adapted from the cited sources; it does not replace evaluation by a health professional.

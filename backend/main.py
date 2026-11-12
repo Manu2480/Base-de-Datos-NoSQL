@@ -6,6 +6,7 @@ import os
 import re
 from datetime import datetime
 from io import BytesIO
+from math import sqrt
 from typing import Any, Literal
 
 from bson import ObjectId
@@ -18,7 +19,7 @@ from gridfs.errors import NoFile
 from pydantic import BaseModel, Field, field_validator
 from pymongo.errors import OperationFailure, PyMongoError
 
-from .ai import EMBEDDING_MODEL, embed_image, embed_texts, generate_answer
+from .ai import active_embedding_model, embed_image, embed_texts, generate_answer
 from .chunking import STRATEGIES, chunk_text, split_sentences
 from .clinical import router as clinical_router
 from .mongo import COLLECTIONS, close_client, get_database, normalize_for_mongo, serialize_document
@@ -127,6 +128,81 @@ def _search_filter(request: SearchInput) -> dict[str, Any]:
     return filters
 
 
+def _cosine(left: list[float], right: list[float]) -> float:
+    if len(left) != len(right) or not left:
+        return 0.0
+    left_norm = sqrt(sum(value * value for value in left))
+    right_norm = sqrt(sum(value * value for value in right))
+    if left_norm == 0 or right_norm == 0:
+        return 0.0
+    return sum(a * b for a, b in zip(left, right)) / (left_norm * right_norm)
+
+
+def _local_vector_search(
+    query_vector: list[float], request: SearchInput, collection_name: str
+) -> list[dict[str, Any]]:
+    """Cosine scan used when this MongoDB has no Atlas $vectorSearch index."""
+    collection = _collection(collection_name)
+    path = "embedding_visual" if collection_name == "imagenes" else "embedding"
+    query: dict[str, Any] = {path: {"$exists": True}}
+    if collection_name == "chunks":
+        query["modelo"] = active_embedding_model()
+        if request.estrategia_chunking:
+            query["estrategia_chunking"] = request.estrategia_chunking
+        if request.idioma:
+            query["idioma"] = request.idioma
+        dates = _search_filter(request).get("fecha")
+        if dates:
+            query["fecha"] = dates
+        projection = {
+            "embedding": 1,
+            "doc_id": 1,
+            "chunk_index": 1,
+            "estrategia_chunking": 1,
+            "chunk_texto": 1,
+            "idioma": 1,
+        }
+    else:
+        query["modelo_embedding"] = active_embedding_model()
+        query["archivo_file_id"] = {"$exists": True, "$ne": None}
+        projection = {
+            "embedding_visual": 1,
+            "archivo": 1,
+            "archivo_file_id": 1,
+            "pie_figura": 1,
+            "pdf_origen": 1,
+            "pagina": 1,
+            "diagnostico_id": 1,
+            "descripcion_visual": 1,
+        }
+    ranked: list[tuple[float, dict[str, Any]]] = []
+    for item in collection.find(query, projection):
+        vector = item.get(path)
+        if not isinstance(vector, list):
+            continue
+        ranked.append((_cosine(query_vector, vector), item))
+    ranked.sort(key=lambda pair: pair[0], reverse=True)
+    names: dict[Any, str] = {}
+    if collection_name == "chunks" and ranked:
+        doc_ids = [item["doc_id"] for _, item in ranked[: request.top_k] if item.get("doc_id") is not None]
+        names = {
+            document["_id"]: document.get("nombre_archivo", "")
+            for document in get_database()["documentos_conocimiento"].find(
+                {"_id": {"$in": doc_ids}},
+                {"nombre_archivo": 1},
+            )
+        }
+    results = []
+    for score, item in ranked[: request.top_k]:
+        item.pop("embedding", None)
+        item.pop("embedding_visual", None)
+        if collection_name == "chunks":
+            item["nombre_archivo"] = names.get(item.get("doc_id"), "")
+        item["score"] = score
+        results.append(serialize_document(item))
+    return results
+
+
 def _vector_search(
     query_vector: list[float], request: SearchInput, collection_name: str = "chunks"
 ) -> list[dict[str, Any]]:
@@ -141,8 +217,11 @@ def _vector_search(
         "limit": request.top_k,
     }
     filters = _search_filter(request)
-    if filters and collection_name == "chunks":
+    if collection_name == "chunks":
+        filters["modelo"] = {"$eq": active_embedding_model()}
         vector_stage["filter"] = filters
+    else:
+        vector_stage["filter"] = {"modelo_embedding": {"$eq": active_embedding_model()}}
     pipeline: list[dict[str, Any]] = [{"$vectorSearch": vector_stage}]
     if collection_name == "chunks":
         pipeline.append(
@@ -179,11 +258,19 @@ def _vector_search(
     try:
         return [serialize_document(item) for item in collection.aggregate(pipeline)]
     except OperationFailure as exc:
-        logger.warning("Falló la búsqueda vectorial en %s: %s", collection_name, exc.code)
-        raise HTTPException(
-            status_code=503,
-            detail=f"No está disponible el índice Atlas '{index}'. Ejecute backend/init_db.py y cree el índice vectorial descrito en docs/API_Y_PLANTILLA.md.",
-        ) from exc
+        logger.warning(
+            "Sin índice Atlas en %s (código %s). Se compara el coseno sobre los vectores guardados.",
+            collection_name,
+            exc.code,
+        )
+        try:
+            return _local_vector_search(query_vector, request, collection_name)
+        except PyMongoError as local_error:
+            logger.exception("Falló la búsqueda vectorial local en %s.", collection_name)
+            raise HTTPException(
+                status_code=503,
+                detail=f"No está disponible el índice Atlas '{index}' ni la comparación local.",
+            ) from local_error
 
 
 def _text_search(request: SearchInput) -> list[dict[str, Any]]:
@@ -595,7 +682,7 @@ def ingest_knowledge_document(payload: IngestInput) -> dict[str, Any]:
                     "estrategia_chunking": strategy,
                     "chunk_texto": chunk,
                     "embedding": embedding,
-                    "modelo": EMBEDDING_MODEL,
+                    "modelo": active_embedding_model(),
                     "idioma": payload.idioma,
                     "fecha": doc["fecha"],
                     "fecha_ingesta": datetime.utcnow(),
@@ -613,7 +700,7 @@ def ingest_knowledge_document(payload: IngestInput) -> dict[str, Any]:
         "documento_id": str(doc_id),
         "chunks_generados": len(chunks_to_insert),
         "estrategias": payload.estrategias,
-        "modelo_embedding": EMBEDDING_MODEL,
+        "modelo_embedding": active_embedding_model(),
     }
 
 
@@ -703,7 +790,7 @@ def ingest_image(
             "texturas": [value.strip() for value in texturas.split(",") if value.strip()],
         },
         "embedding_visual": vector,
-        "modelo_embedding": EMBEDDING_MODEL,
+        "modelo_embedding": active_embedding_model(),
         "fecha_registro": datetime.utcnow(),
     }
     try:

@@ -1,0 +1,12 @@
+Alopecia areata: autoimmune patchy hair loss and treatment options
+Source: https://www.niams.nih.gov/health-topics/alopecia-areata; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Alopecia areata is an autoimmune disease in which the immune system attacks hair follicles, causing hair loss in round or oval patches. The follicles are not destroyed, so hair can regrow, but the course is unpredictable. It can start at any age, often in childhood or young adulthood, has a genetic component, and is associated with thyroid disease, vitiligo and atopic dermatitis. It is not contagious or dangerous to health, but it can have a strong emotional impact. Forms include patchy, total (loss of all scalp hair) and universal (loss of all body hair).
+
+The typical sign is a smooth, well-defined patch of skin without hair, with no redness, scaling or scarring. "Exclamation mark" hairs at the edge are characteristic. Nails may show pitting. Regrown hair may first be white. Diagnosis is clinical, sometimes with dermoscopy, and tests may rule out ringworm, lupus or thyroid disease.
+
+There is no definitive cure. For a few patches, potent topical corticosteroids or steroid injections into the patches are used, along with minoxidil and topical immunotherapy. Extensive disease may be treated with JAK inhibitors such as baricitinib, short courses of oral steroids or methotrexate. Wigs and psychological support help.
+
+Precautions: prolonged steroids thin the skin; JAK inhibitors increase the risk of infections including shingles and require laboratory monitoring; methotrexate is contraindicated in pregnancy and interacts with trimethoprim-sulfamethoxazole and NSAIDs. Protect scalp skin from the sun.
+
+Notice: educational text written for academic purposes, adapted from the cited sources; it does not replace evaluation by a health professional.

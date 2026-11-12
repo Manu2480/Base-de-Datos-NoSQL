@@ -19,7 +19,7 @@ const QUERIES = [
   { id: "assigned", title: "Diagnósticos asignados", path: "/api/assigned-diagnoses", hint: "paciente_id, diagnostico_id y vigente.", filters: [["paciente_id", "Paciente (ObjectId)"], ["diagnostico_id", "Diagnóstico (ObjectId)"]], flag: ["vigente", "Solo vigentes"], columns: [["fecha_diagnostico", "Fecha"], ["vigente", "Vigente"], ["paciente_id", "Paciente"]], example: { vigente: true } },
   { id: "histories", title: "Historias médicas", path: "/api/medical-histories", hint: "paciente_id.", filters: [["paciente_id", "Paciente (ObjectId)"]], columns: [["paciente_id", "Paciente"], ["_id", "Historia"]], example: { paciente_id: "<ObjectId>" } },
   { id: "labs", title: "Laboratorio", path: "/api/laboratory-results", hint: "paciente_id, tipo_examen, formato (JSON o TXT) y rango de fecha.", filters: [["paciente_id", "Paciente (ObjectId)"], ["tipo_examen", "Tipo de examen"], ["formato", "Formato", ["", "JSON", "TXT"]], ["fecha_desde", "Desde", "date"], ["fecha_hasta", "Hasta", "date"]], columns: [["tipo_examen", "Examen"], ["formato", "Formato"], ["fecha", "Fecha"], ["resultado.parametro", "Parámetro"], ["resultado.valor", "Valor"]], example: { tipo_examen: "Biopsia", formato: "JSON" } },
-  { id: "images", title: "Imágenes", path: "/api/clinical-images", hint: "paciente_id, diagnostico_id y descripcion_visual.region_corporal. No devuelve el embedding.", filters: [["paciente_id", "Paciente (ObjectId)"], ["diagnostico_id", "Diagnóstico (ObjectId)"], ["region", "Región corporal"]], columns: [["archivo", "Archivo"], ["descripcion_visual.region_corporal", "Región"], ["fecha_registro", "Fecha"]], example: { region: "referencia" } },
+  { id: "images", title: "Imágenes", path: "/api/clinical-images", hint: "Fotografías guardadas. Filtros: diagnóstico del catálogo, pdf_origen, pie_figura y pagina. No devuelve el embedding.", filters: [["diagnostico", "Diagnóstico"], ["pdf_origen", "PDF de origen"], ["pie", "Pie de figura"], ["pagina", "Página"]], columns: [["archivo", "Imagen", "image"], ["diagnostico", "Diagnóstico"], ["pie_figura", "Pie de figura"], ["pdf_origen", "PDF"], ["pagina", "Página"]], example: { diagnostico: "Verruga vulgar", pie: "Figura" } },
   { id: "knowledge", title: "Documentos", path: "/api/knowledge-documents", hint: "tema, categoria, idioma y diagnostico_id.", filters: [["tema", "Tema"], ["categoria", "Categoría"], ["idioma", "Idioma"], ["diagnostico_id", "Diagnóstico (ObjectId)"]], columns: [["titulo", "Título"], ["tema", "Tema"], ["categoria", "Categoría"]], example: { tema: "psoriasis-en-placas", categoria: "descripcion" } },
   { id: "chunks", title: "Fragmentos", path: "/api/chunks", hint: "doc_id, estrategia_chunking e idioma. No devuelve el embedding.", filters: [["doc_id", "Documento (ObjectId)"], ["estrategia_chunking", "Estrategia", ["", "fixed-size", "sentence-aware", "semantic"]], ["idioma", "Idioma"]], columns: [["estrategia_chunking", "Estrategia"], ["chunk_index", "Índice"], ["chunk_texto", "Texto"]], example: { estrategia_chunking: "sentence-aware", idioma: "es" } },
   { id: "users", title: "Usuarios", path: "/api/users", hint: "nombre y correo.", filters: [["nombre", "Nombre"], ["correo", "Correo"]], columns: [["nombre", "Nombre"], ["correo", "Correo"]], example: { correo: "ucaldas.edu.co" } },
@@ -77,10 +77,20 @@ function valueAt(item, path) {
   return String(value);
 }
 
+function renderCell(item, column) {
+  const [key, , kind] = column;
+  if (kind === "image") {
+    if (!item.archivo_file_id || !item._id) return "<td><span class=\"muted\">Sin fotografía almacenada</span></td>";
+    const alt = escapeHtml(valueAt(item, "pie_figura") || valueAt(item, "diagnostico"));
+    return `<td><img class="query-thumb" src="/api/images/${encodeURIComponent(item._id)}/file" alt="${alt}"></td>`;
+  }
+  return `<td>${escapeHtml(valueAt(item, key))}</td>`;
+}
+
 function renderTable(items, columns) {
   if (!items.length) return '<p class="muted">No hay documentos con esos filtros.</p>';
   const head = columns.map(([, label]) => `<th>${escapeHtml(label)}</th>`).join("");
-  const body = items.map((item) => `<tr>${columns.map(([key]) => `<td>${escapeHtml(valueAt(item, key))}</td>`).join("")}</tr>`).join("");
+  const body = items.map((item) => `<tr>${columns.map((column) => renderCell(item, column)).join("")}</tr>`).join("");
   return `<table class="data-table"><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table>`;
 }
 
@@ -141,7 +151,13 @@ async function openProfile(patientId) {
   }).join("") || "<li>Sin diagnósticos asignados</li>";
   const histories = profile.medical_histories.map((item) => `<li>${(item.episodios || []).length} episodio(s) · ${escapeHtml(item._id)}</li>`).join("") || "<li>Sin historia</li>";
   const labs = profile.laboratory_results.map((item) => `<li>${escapeHtml(item.tipo_examen)} · ${escapeHtml(item.resultado?.parametro)} ${escapeHtml(item.resultado?.valor)}</li>`).join("") || "<li>Sin exámenes</li>";
-  const images = profile.images.map((item) => `<li>${escapeHtml(item.descripcion_visual?.region_corporal || "región")} · ${escapeHtml(item.archivo)}</li>`).join("") || "<li>Sin imágenes del paciente</li>";
+  const images = profile.images.map((item) => {
+    const caption = escapeHtml(item.descripcion_visual?.region_corporal || "región");
+    const photo = item.archivo_file_id && item._id
+      ? `<img class="query-thumb" src="/api/images/${encodeURIComponent(item._id)}/file" alt="${caption}">`
+      : "";
+    return `<li>${photo}<span>${caption}</span></li>`;
+  }).join("") || "<li>Sin imágenes del paciente</li>";
   $("#patient-list-panel").hidden = true;
   $("#patient-profile").hidden = false;
   $("#patient-profile").innerHTML = `

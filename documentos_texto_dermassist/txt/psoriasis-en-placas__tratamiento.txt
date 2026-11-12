@@ -1,0 +1,19 @@
+Tratamiento de la psoriasis: tópicos, fototerapia y fármacos sistémicos
+Fuente: https://medlineplus.gov/spanish/ency/article/000434.htm; https://www.medlineplus.gov/spanish/psoriasis.html; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+El tratamiento de la psoriasis depende de la extensión y la gravedad, y se organiza por escalones. Los casos leves se tratan en casa; los moderados o graves requieren fototerapia o medicamentos sistémicos. No hay cura, pero suele poder controlarse a largo plazo.
+
+Tratamientos tópicos (casos leves):
+- Cremas hidratantes y emolientes diarios para mantener la piel húmeda.
+- Terapia tópica combinada: un corticoide potente más un análogo de vitamina D, como el calcipotriol, que normaliza el recambio celular. El clobetasol es un corticoide muy potente que se reserva para placas resistentes y no se usa de forma prolongada en cara o pliegues.
+- Baños o duchas diarias, sin frotar fuerte, porque el roce puede desencadenar un brote.
+
+Fototerapia: exposición controlada a luz ultravioleta B de banda estrecha (311 nm) en cabina, en sesiones supervisadas.
+
+Tratamiento sistémico convencional (moderada a severa): metotrexato semanal con control periódico de laboratorio, especialmente del hígado, el riñón y la sangre.
+
+Biológicos: medicamentos más recientes que atacan de forma específica el proceso inmunitario de la psoriasis, como el adalimumab (anti-TNF), indicados cuando otros tratamientos no funcionan. Entre los biológicos aprobados para la psoriasis figuran también el abatacept y el apremilast, según la fuente consultada.
+
+El seguimiento debe incluir la vigilancia de las enfermedades asociadas, como el hígado graso y el riesgo cardiovascular, y de la artritis psoriásica.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

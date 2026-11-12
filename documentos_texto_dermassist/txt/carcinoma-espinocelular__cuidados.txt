@@ -1,0 +1,19 @@
+Carcinoma espinocelular: prevención y precauciones en pacientes inmunodeprimidos
+Fuente: https://medlineplus.gov/spanish/ency/article/000829.htm; https://www.mayoclinic.org/es/diseases-conditions/skin-cancer/symptoms-causes/syc-20377605; https://www.cancer.gov/espanol/tipos/piel/paciente/tratamiento-piel-pdq; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+La prevención del espinocelular se basa en la fotoprotección constante y en tratar a tiempo las lesiones precancerosas.
+
+Medidas:
+- Protección solar diaria con FPS 30 o mayor, ropa, sombrero y gafas; evitar el sol de mediodía y las camas de bronceado.
+- Bálsamo labial con filtro solar para proteger el labio.
+- Dejar de fumar, que se asocia con el cáncer de labio y de la cavidad oral.
+- Autoexamen mensual y consulta anual con dermatología, y más frecuente en personas con queratosis actínicas o con riesgo elevado.
+- Tratar las queratosis actínicas antes de que evolucionen.
+
+Pacientes inmunodeprimidos: quienes reciben inmunosupresores (por ejemplo, metotrexato, ciclosporina o biológicos) o son trasplantados tienen un riesgo mucho mayor de carcinoma espinocelular, que puede ser más agresivo. Deben tener revisiones dermatológicas frecuentes y reforzar la protección solar. Algunos tratamientos, como la fototerapia con psoralenos y UVA, aumentan el riesgo de cáncer de piel, por lo que se evalúa cuidadosamente su uso a largo plazo.
+
+Precauciones con tratamientos tópicos: 5-fluorouracilo e imiquimod causan reacciones locales intensas y no deben usarse en el embarazo.
+
+Signos de alarma: lesión que crece rápidamente, duele, sangra, se ulcera o no cicatriza, ganglios inflamados en el cuello, la axila o la ingle. Consultar sin demora, porque la detección temprana mejora mucho el pronóstico.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

@@ -1,0 +1,21 @@
+Foliculitis: prevención, precauciones y cuándo consultar
+Fuente: https://medlineplus.gov/spanish/ency/article/000823.htm; https://www.mayoclinic.org/es-es/diseases-conditions/folliculitis/symptoms-causes/syc-20361634; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Prevenir la foliculitis consiste sobre todo en evitar lo que lesiona el folículo y mantener la piel limpia y seca.
+
+Medidas de prevención:
+- Afeitarse con navaja limpia y afilada, siguiendo la dirección del vello, con crema o gel lubricante, y enjuagar la hoja a menudo. No compartir navajas, toallas ni ropa.
+- Cambiar la ropa sudada o mojada, incluidos los trajes de baño, cuanto antes.
+- Evitar la ropa muy ajustada y los materiales sintéticos que atrapan la humedad.
+- Verificar que las piscinas y jacuzzis estén bien tratados con cloro.
+- Mantener controladas enfermedades como la diabetes.
+
+Precauciones con el tratamiento:
+- Doxiciclina: aumenta el riesgo de pseudotumor cerebri (hipertensión intracraneal) y no se usa en el embarazo ni en niños pequeños; no debe combinarse con isotretinoína.
+- Los corticoides tópicos pueden empeorar una foliculitis infecciosa y no se deben aplicar sobre ella.
+- Alergia a la penicilina: evitar dicloxacilina y amoxicilina-clavulánico; revisar la cefalexina según el tipo de alergia.
+- Si el paciente toma metotrexato, no debe usar trimetoprim-sulfametoxazol sin supervisión médica, por el riesgo de toxicidad.
+
+Cuándo consultar al médico: lesiones que no mejoran en una semana, que se extienden o se vuelven más profundas, aparición de fiebre o escalofríos, bultos grandes y dolorosos, o episodios repetidos. En la zona de la cara se debe tener especial cuidado: no manipular las lesiones y buscar atención rápida si hay dolor o hinchazón.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

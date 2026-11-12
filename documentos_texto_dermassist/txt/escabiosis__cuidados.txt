@@ -1,0 +1,22 @@
+Escabiosis: contagio, contraindicaciones y cuándo consultar
+Fuente: https://medlineplus.gov/spanish/ency/article/000830.htm; https://www.who.int/es/news-room/fact-sheets/detail/scabies; https://www.mayoclinic.org/es/diseases-conditions/scabies/diagnosis-treatment/drc-20377383; https://www.cdc.gov/scabies/hcp/clinical-care/; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Como la sarna es muy contagiosa, el éxito del tratamiento depende de tratar a todos los convivientes y contactos íntimos a la vez.
+
+Prevención y control:
+- Evitar el contacto piel con piel con personas infestadas hasta completar el tratamiento (por lo general, hasta 24 horas después de la primera aplicación de permetrina).
+- Lavar y secar a alta temperatura la ropa y la ropa de cama.
+- En residencias, colegios y guarderías, notificar los casos y tratar de manera coordinada.
+
+Contraindicaciones:
+- Permetrina: no se utiliza en menores de 2 meses. Puede irritar la piel y empeorar el picor transitoriamente.
+- Ivermectina: no se indica en niños con peso inferior a 15 kg ni durante el embarazo; en pacientes con insuficiencia hepática se usa con precaución.
+- Corticoides tópicos potentes: no deben usarse como único tratamiento, porque pueden enmascarar el cuadro y favorecer la sarna incógnita.
+
+Fracaso del tratamiento: puede deberse a una aplicación incompleta, a no tratar a los contactos o a la reinfestación. Si persiste la picazón después de cuatro semanas, o aparecen nuevas galerías, hay que repetir el tratamiento y valorar la adherencia.
+
+Complicaciones: las lesiones rascadas se infectan con facilidad y pueden convertirse en impétigo, así que ante costras amarillas, pus, fiebre o enrojecimiento extenso se requiere consulta.
+
+Consultar al médico si hay sospecha de sarna, en especial en bebés, ancianos, embarazadas, personas inmunodeprimidas, o ante cualquier brote en un entorno cerrado.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

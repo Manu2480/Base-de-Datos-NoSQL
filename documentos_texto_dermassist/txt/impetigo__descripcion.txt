@@ -1,0 +1,15 @@
+Impétigo: qué es, quién lo contrae y cómo se contagia
+Fuente: https://www.cdc.gov/groupastrep/diseases-public/impetigo-sp.html; https://www.msdmanuals.com/es/professional/enfermedades-infecciosas/infecciones-bacterianas-de-la-piel/impétigo-y-ectima; https://www.mayoclinic.org/es/diseases-conditions/impetigo/symptoms-causes/syc-20352352; https://kidshealth.org/CHW/es/parents/impetigo.html
+
+El impétigo es una infección bacteriana superficial de la piel, muy frecuente en niños de 2 a 5 años, aunque puede afectar a personas de cualquier edad. Lo causan principalmente dos bacterias: Staphylococcus aureus y Streptococcus pyogenes (estreptococo del grupo A). Se limita a las capas más externas de la epidermis, por lo que suele curar sin dejar cicatriz si se trata bien.
+
+Es contagioso. Se transmite por contacto directo con las lesiones o con objetos contaminados, como toallas, ropa de cama, juguetes o utensilios compartidos. Se propaga con facilidad en guarderías, escuelas y deportes de contacto, y es más común en climas cálidos y húmedos. Las bacterias entran por pequeñas roturas de la piel: un rasguño, una picadura de insecto, una quemadura leve, una lesión de varicela o un eccema. Por eso los niños con dermatitis atópica son especialmente vulnerables, y el rascado extiende la infección a otras zonas del cuerpo.
+
+Se reconocen dos formas clínicas:
+- Impétigo no ampolloso, el más común (cerca del 70 % de los casos), causado por estafilococo o estreptococo.
+- Impétigo ampolloso, causado por estafilococo productor de toxinas, con ampollas más grandes.
+Existe además el ectima, una forma más profunda que produce úlceras con costra.
+
+En el dominio del proyecto, el impétigo pertenece a las enfermedades infecciosas (bacterianas). Aunque casi siempre es leve, puede complicarse: la infección por estreptococo puede asociarse con glomerulonefritis posestreptocócica, una afección renal poco frecuente. Con tratamiento, deja de ser contagioso 24 horas después de iniciar el antibiótico.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

@@ -479,23 +479,56 @@ def list_laboratory(
 
 @router.get("/api/clinical-images")
 def list_clinical_images(
-    paciente_id: str | None = Query(default=None, max_length=32),
-    diagnostico_id: str | None = Query(default=None, max_length=32),
-    region: str | None = Query(default=None, max_length=100),
+    diagnostico: str | None = Query(default=None, max_length=160),
+    pdf_origen: str | None = Query(default=None, max_length=200),
+    pie: str | None = Query(default=None, max_length=200),
+    pagina: int | None = Query(default=None, ge=1, le=5000),
 ) -> dict[str, Any]:
-    query: dict[str, Any] = {}
-    if (patient := _object_id(paciente_id, "paciente_id")):
-        query["paciente_id"] = patient
-    if (diagnosis := _object_id(diagnostico_id, "diagnostico_id")):
-        query["diagnostico_id"] = diagnosis
-    if (body_region := _contains(region)):
-        query["descripcion_visual.region_corporal"] = body_region
-    return _find_page(
+    """Photographs that have a stored file.
+
+    The reference set has diagnostico_id, pdf_origen, pie_figura and pagina.
+    It has no patient and no body-region field, so those are not filters here.
+    """
+    query: dict[str, Any] = {"archivo_file_id": {"$exists": True, "$ne": None}}
+    if (name := _contains(diagnostico)):
+        diagnosis_ids = [
+            item["_id"]
+            for item in get_database()["diagnosticos_dermatologicos"].find(
+                {"nombre": name},
+                {"_id": 1},
+            )
+        ]
+        query["$or"] = [
+            {"diagnostico_id": {"$in": diagnosis_ids}},
+            {"diagnosticos_ids": {"$in": diagnosis_ids}},
+        ]
+    if (source := _contains(pdf_origen)):
+        query["pdf_origen"] = source
+    if (caption := _contains(pie)):
+        query["pie_figura"] = caption
+    if pagina is not None:
+        query["pagina"] = pagina
+    page = _find_page(
         "imagenes",
         query,
         {"embedding_visual": 0},
         [("fecha_registro", -1)],
     )
+    id_strings = {
+        item["diagnostico_id"]
+        for item in page["items"]
+        if isinstance(item.get("diagnostico_id"), str) and ObjectId.is_valid(item["diagnostico_id"])
+    }
+    names = {
+        str(item["_id"]): item.get("nombre", "")
+        for item in get_database()["diagnosticos_dermatologicos"].find(
+            {"_id": {"$in": [ObjectId(value) for value in id_strings]}},
+            {"nombre": 1},
+        )
+    }
+    for item in page["items"]:
+        item["diagnostico"] = names.get(item.get("diagnostico_id"), "")
+    return page
 
 
 @router.get("/api/knowledge-documents")

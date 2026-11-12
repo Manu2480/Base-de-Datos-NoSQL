@@ -1,0 +1,14 @@
+Vitiligo: white patches, causes, treatment and when to see a doctor
+Source: https://www.niams.nih.gov/sites/default/files/catalog/files/vitiligo_ff_espanol.pdf; https://www.mayoclinic.org/es-es/diseases-conditions/vitiligo/symptoms-causes/syc-20355912; https://kidshealth.org/CHW/es/parents/vitiligo.html; https://www.cun.es/diccionario-medico/terminos/vitiligo; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Vitiligo is a chronic condition in which the cells that make pigment (melanocytes) are destroyed, producing flat, smooth, chalk-white patches with sharp borders. It is considered autoimmune. It can begin at any age but often starts before 30. It affects all races equally, though it is more visible in dark skin. It is not contagious, not painful, and unrelated to hygiene. It is linked to other autoimmune diseases, especially thyroid disease.
+
+Patches appear most often on the face (around the eyes and mouth), hands, wrists, feet, elbows, knees and genital area, usually symmetrically. Hair in the patch may turn white. Patches do not tan and burn easily. Types include generalized (most common), segmental (one side of the body), focal and, rarely, universal.
+
+White patches have other causes, such as pityriasis alba (lighter, scaly, in children with dry skin) and fungal infection; a Wood's lamp helps tell them apart.
+
+There is no definitive cure, but treatment can stop spread and restore some color: topical corticosteroids, tacrolimus 0.1% (useful on the face), narrow-band UVB phototherapy, and topical JAK inhibitors where available. Stable patches can be treated with skin grafts. Sunscreen is essential, and cosmetic camouflage and psychological support help.
+
+Precautions: tacrolimus is not used on infected skin or in immunodeficiency; strong steroids are used cautiously on the face. See a dermatologist for new white patches, rapid spread, or symptoms of thyroid disease such as fatigue or weight change.
+
+Notice: educational text written for academic purposes, adapted from the cited sources; it does not replace evaluation by a health professional.

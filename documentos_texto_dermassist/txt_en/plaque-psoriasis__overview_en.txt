@@ -1,0 +1,12 @@
+Plaque psoriasis: overview, symptoms, treatment and drug safety
+Source: https://medlineplus.gov/spanish/ency/article/000434.htm; https://www.medlineplus.gov/spanish/psoriasis.html; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Plaque psoriasis is a chronic, immune-mediated skin disease in which skin cells multiply in days instead of weeks and pile up as thick, red, well-defined plaques covered with silvery-white scales. It typically appears on the elbows, knees, scalp and lower back, often symmetrically. It is not contagious. It tends to start between ages 10 and 35 and has a hereditary component. Flares can be triggered by infections, stress, dry skin, skin injury and some medicines. Some patients develop psoriatic arthritis, with joint pain and stiffness, and they carry a higher risk of cardiovascular disease and fatty liver.
+
+Other signs include itching, cracked skin that bleeds, and nail changes such as pitting, thickening and separation from the nail bed.
+
+Treatment is stepwise. Mild disease is treated with daily emollients and topical therapy: a potent corticosteroid combined with a vitamin D analogue such as calcipotriol. Clobetasol, a very potent steroid, is reserved for resistant plaques and is not used in children under 12 or for long periods on the face and folds. Narrow-band UVB phototherapy is used for wider disease. Moderate to severe disease needs systemic drugs: methotrexate, or biologics such as adalimumab (anti-TNF).
+
+Safety: methotrexate is contraindicated in pregnancy, liver disease and kidney failure, and it interacts with trimetoprim-sulfamethoxazole, ibuprofen and penicillins such as dicloxacillin and amoxicillin-clavulanate, which raise its toxicity. Anti-TNF drugs are avoided in untreated tuberculosis or serious active infection and increase the risk of shingles and cellulitis. Regular blood tests are required with methotrexate.
+
+Notice: educational text written for academic purposes, adapted from the cited sources; it does not replace evaluation by a health professional.

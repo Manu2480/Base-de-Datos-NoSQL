@@ -1,0 +1,12 @@
+Acne vulgaris: lesions, treatment and safety of isotretinoin and doxycycline
+Source: https://medlineplus.gov/spanish/ency/article/000873.htm; https://www.niams.nih.gov/es/informacion-de-salud/acne; https://www.mayoclinic.org/es/diseases-conditions/acne/symptoms-causes/syc-20368047; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Acne vulgaris is a common skin disease of the hair follicles and oil glands. Pores become blocked with sebum and dead cells, and bacteria such as Cutibacterium acnes multiply, causing inflammation. It affects the face, chest and back, is most common in adolescence because of hormonal changes, and can persist in adults, especially women. It is not caused by poor hygiene, and harsh scrubbing makes it worse.
+
+Lesions include non-inflammatory comedones (blackheads and whiteheads) and inflammatory papules, pustules, nodules and cysts. Severe nodulocystic acne can scar and cause dark marks and emotional distress. Unlike rosacea, acne has comedones and usually starts in the teenage years.
+
+Treatment depends on severity. Topical retinoids (tretinoin, adapalene) unblock pores, benzoyl peroxide kills bacteria, and topical clindamycin is combined with benzoyl peroxide to avoid resistance. Moderate inflammatory acne may need oral doxycycline for a limited period; hormonal options such as some contraceptives or spironolactone help some women. Oral isotretinoin is for severe, scarring or resistant acne. Results take six to eight weeks.
+
+Safety: isotretinoin causes severe birth defects and is contraindicated in pregnancy; women need effective contraception and pregnancy tests. It can dry the skin and raise lipids and liver enzymes. It must not be combined with doxycycline because of the risk of pseudotumor cerebri (severe headache, visual changes). Doxycycline also causes sun sensitivity and is avoided in pregnancy and in children under 8. See a doctor for painful, deep or scarring acne.
+
+Notice: educational text written for academic purposes, adapted from the cited sources; it does not replace evaluation by a health professional.

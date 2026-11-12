@@ -1,0 +1,12 @@
+Cellulitis: deep bacterial skin infection, warning signs and treatment
+Source: https://www.medlineplus.gov/spanish/cellulitis.html; https://www.cdc.gov/groupastrep/diseases-public/cellulitis-sp.html; https://www.mayoclinic.org/es/diseases-conditions/cellulitis/diagnosis-treatment/drc-20370766; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Cellulitis is a bacterial infection of the deeper layers of the skin (dermis and subcutaneous tissue), usually caused by streptococci or Staphylococcus aureus, including MRSA. It is not the same as cosmetic "cellulite". Bacteria enter through cuts, insect bites, ulcers, surgical wounds or cracked skin such as athlete's foot or eczema. Risk factors include diabetes, chronic leg swelling (lymphedema), obesity, weakened immunity and previous cellulitis. It does not spread easily between people.
+
+The affected skin becomes red, warm, swollen and painful, with poorly defined borders that spread over hours or days. Fever and chills suggest the infection is spreading. Warning signs needing urgent care include high fever, confusion, rapidly spreading redness, severe pain out of proportion, or dark blisters, which can indicate sepsis or necrotizing infection.
+
+Treatment is with antibiotics covering streptococci and staphylococci. Mild cases are managed orally for five to ten days with dicloxacillin, cephalexin or amoxicillin-clavulanate; MRSA may require trimethoprim-sulfamethoxazole, doxycycline or clindamycin. Severe cases need hospital treatment with intravenous antibiotics. Elevate the limb and keep wounds clean. Improvement is expected in 48 to 72 hours.
+
+Precautions: penicillins are avoided with penicillin allergy, and cephalexin with cephalosporin allergy or prior anaphylaxis. Patients taking methotrexate should not receive trimethoprim-sulfamethoxazole, which can cause severe bone marrow toxicity. Doxycycline is avoided in pregnancy and carries a risk of pseudotumor cerebri. Treating athlete's foot and swelling helps prevent recurrence.
+
+Notice: educational text written for academic purposes, adapted from the cited sources; it does not replace evaluation by a health professional.

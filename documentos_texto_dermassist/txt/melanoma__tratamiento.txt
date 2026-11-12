@@ -1,0 +1,24 @@
+Tratamiento del melanoma según el estadio
+Fuente: https://medlineplus.gov/spanish/melanoma.html; https://www.cancer.gov/espanol/tipos/piel/paciente/tratamiento-melanoma-pdq; https://www.mayoclinic.org/es/diseases-conditions/melanoma/symptoms-causes/syc-20374884
+
+El tratamiento del melanoma depende del estadio, es decir, del espesor del tumor, de si hay ulceración y de si se ha extendido a ganglios u otros órganos.
+
+Melanoma localizado (estadios iniciales):
+- Escisión quirúrgica con márgenes de seguridad proporcionales al espesor del tumor. En muchos casos es curativa.
+- Biopsia del ganglio centinela en tumores de cierto espesor, para ver si hay diseminación a los ganglios.
+
+Melanoma con afectación ganglionar o de alto riesgo:
+- Tratamiento adyuvante después de la cirugía, con inmunoterapia (inhibidores de puntos de control, como anti-PD-1) o con terapia dirigida si hay mutación BRAF, para reducir el riesgo de recaída.
+- Disección ganglionar o vigilancia con ecografía, según el caso.
+
+Melanoma avanzado o metastásico:
+- Inmunoterapia (nivolumab, pembrolizumab, ipilimumab), que ha mejorado de manera notable la supervivencia.
+- Terapia dirigida con inhibidores de BRAF y MEK en tumores con la mutación BRAF V600.
+- Radioterapia para el control de síntomas en metástasis específicas y, en ocasiones, quimioterapia.
+- Participación en ensayos clínicos.
+
+Seguimiento: controles periódicos de la piel, los ganglios y, según el estadio, estudios de imagen, durante muchos años, porque el melanoma puede reaparecer. Se refuerzan el autoexamen y la fotoprotección.
+
+El tratamiento debe manejarse en un equipo multidisciplinario con oncología y dermatología.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

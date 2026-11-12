@@ -1,0 +1,24 @@
+Tratamiento de la escabiosis: permetrina, ivermectina y cuidados del hogar
+Fuente: https://medlineplus.gov/spanish/ency/article/000830.htm; https://www.who.int/es/news-room/fact-sheets/detail/scabies; https://www.mayoclinic.org/es/diseases-conditions/scabies/diagnosis-treatment/drc-20377383; https://www.cdc.gov/scabies/hcp/clinical-care/; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+El tratamiento de la escabiosis requiere eliminar el ácaro con un escabicida y tratar a todos los contactos cercanos al mismo tiempo, aunque no tengan síntomas.
+
+Permetrina al 5 % en crema (primera línea):
+- Se aplica en todo el cuerpo, del cuello a los pies (en niños pequeños y ancianos también en cara y cuero cabelludo), con especial atención a los pliegues, las uñas y los espacios interdigitales.
+- Se deja actuar unas 8 a 14 horas, por ejemplo durante la noche, y se enjuaga. Suele repetirse una semana después.
+- No se usa en menores de 2 meses.
+
+Ivermectina oral:
+- Se toma en dosis única, que normalmente se repite a los 7 a 14 días.
+- No se utiliza en niños que pesan menos de 15 kg ni en embarazadas, y puede ser útil en brotes institucionales y en sarna costrosa.
+
+Otras opciones: benzoato de bencilo, crotamitón o azufre precipitado en vaselina, este último usado en lactantes y embarazadas.
+
+Medidas complementarias:
+- Lavar con agua caliente (al menos 50 °C) y secar al calor la ropa, la ropa de cama y las toallas usadas en los días previos, o guardarlas en bolsa cerrada por 72 horas.
+- Aspirar colchones y muebles tapizados.
+- El prurito puede continuar entre dos y cuatro semanas después de curar la infestación, debido a la reacción alérgica; los antihistamínicos o corticoides tópicos suaves alivian.
+
+Si se infectan las lesiones, se añade un antibiótico.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

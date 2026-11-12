@@ -1,0 +1,21 @@
+Tratamiento de la tiña pedis con antifúngicos
+Fuente: https://medlineplus.gov/spanish/ency/article/000875.htm; https://www.mayoclinic.org/es/diseases-conditions/athletes-foot/symptoms-causes/syc-20353841; https://medlineplus.gov/spanish/tineainfections.html; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+La tiña pedis se trata con antifúngicos tópicos en la mayoría de los casos. Las cremas, geles o polvos de venta libre o con receta son eficaces si se usan con constancia.
+
+Antifúngicos tópicos comunes:
+- Terbinafina en crema, una vez o dos veces al día durante una a cuatro semanas, según el tipo de lesión. Es de las más rápidas y eficaces.
+- Clotrimazol, miconazol, ketoconazol o econazol, aplicados una o dos veces al día durante cuatro semanas.
+- Es importante seguir el tratamiento durante una a dos semanas después de que los síntomas desaparezcan, para evitar recaídas.
+
+Antifúngicos orales: se reservan para casos extensos, de tipo mocasín, muy inflamados, que no responden a tratamiento tópico o con afectación de las uñas. Incluyen la terbinafina y el itraconazol. El fluconazol se usa en algunas situaciones, pero su combinación con hidroxicloroquina prolonga el intervalo QT y puede causar arritmias, por lo que no debe usarse sin valoración en pacientes con lupus o con otros medicamentos que prolonguen el QT. Se necesita control de la función hepática en tratamientos prolongados.
+
+Cuidados complementarios:
+- Lavar y secar bien los pies, sobre todo entre los dedos.
+- Usar calcetines de algodón o fibras que absorban el sudor, y cambiarlos a diario.
+- Alternar el calzado para que se seque, y tratar el calzado con polvo antifúngico.
+- Usar chanclas en duchas y vestuarios.
+
+Si hay infección bacteriana asociada, se añade tratamiento antibiótico.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

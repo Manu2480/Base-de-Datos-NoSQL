@@ -14,9 +14,10 @@
 
 Todo queda en la base `vector_db`.
 
-- `datos/conocimiento/documentos_conocimiento.json`: 116 textos para el RAG. Al arrancar, `python -m backend.load_conocimiento` los guarda en `documentos_conocimiento` y enlaza cada afección con su diagnóstico clínico. `datos/conocimiento/textos/` es la misma información en archivos sueltos.
+- `datos/conocimiento/documentos_conocimiento.json`: 179 textos para el RAG, en español e inglés. Al arrancar, `python -m backend.load_conocimiento` reemplaza `documentos_conocimiento` y enlaza cada afección con su diagnóstico clínico. Los archivos sueltos están en `datos/conocimiento/textos/` y `datos/conocimiento/textos_en/`.
+- `datos/conocimiento/imagenes_referencia/`: fotografías extraídas de los artículos. El mismo cargador las guarda en `imagenes` y en GridFS, ligadas al diagnóstico. No sustituyen las imágenes de los casos clínicos.
 - `datos/clinico/`: catálogo, 24 pacientes sintéticos y consultas. Compose los carga en el mismo Mongo de la API. El uso está en [datos/clinico/README.md](datos/clinico/README.md).
-- `datos/imagenes/`: reservada para fotografías. Los embeddings visuales que se cargan son sintéticos.
+- `datos/imagenes/`: reservada. Las fotos de los casos clínicos siguen con un embedding sintético; las fotografías reales están en `imagenes_referencia`.
 
 ## Requisitos y ejecución
 

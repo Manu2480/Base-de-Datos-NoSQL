@@ -1,0 +1,12 @@
+Squamous cell carcinoma of the skin: risk factors, signs and treatment
+Source: https://medlineplus.gov/spanish/ency/article/000829.htm; https://www.mayoclinic.org/es/diseases-conditions/skin-cancer/symptoms-causes/syc-20377605; https://www.cancer.gov/espanol/tipos/piel/paciente/tratamiento-piel-pdq; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Squamous cell carcinoma (SCC) is the second most common skin cancer. It arises from keratinocytes in the middle layers of the epidermis. It is more aggressive than basal cell carcinoma: it grows faster and a small proportion spread to lymph nodes and other organs. The main cause is long-term ultraviolet exposure, and it often develops on actinic keratoses, rough precancerous patches on sun-damaged skin. It can also arise on old scars, chronic ulcers and irradiated skin. Risk is much higher, and the disease more aggressive, in immunosuppressed people, such as transplant recipients and patients taking immunosuppressive drugs. Common sites are the lips (especially the lower lip), ears, face, scalp, backs of the hands and forearms.
+
+It appears as a firm red nodule or plaque with a scaly or crusted surface, sometimes a cutaneous horn, or a shallow ulcer that bleeds and does not heal. Signs of higher risk include rapid growth, size, pain or numbness, location on the lip or ear, and enlarged lymph nodes. Diagnosis is by biopsy.
+
+Surgery is the treatment of choice: standard excision or Mohs surgery for the face, lips, ears, recurrent or high-risk tumors. Radiotherapy is used when surgery is not possible. Precancerous or in situ lesions can be treated with cryotherapy, 5-fluorouracil, imiquimod or photodynamic therapy. Advanced or metastatic disease may be treated with immunotherapy such as cemiplimab.
+
+Prevention: daily SPF 30+ sunscreen, lip balm with sunscreen, no tanning beds, not smoking, and regular dermatology checks, more often in immunosuppressed patients.
+
+Notice: educational text written for academic purposes, adapted from the cited sources; it does not replace evaluation by a health professional.

@@ -1,0 +1,12 @@
+Cutaneous lupus erythematosus: subtypes, triggers and management
+Source: https://www.lupus.org/es/az/resources/que-es-el-lupus-cutaneo; https://revactamedica.sld.cu; https://dialnet.unirioja.es/descarga/articulo/9523430.pdf; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Cutaneous lupus erythematosus is an autoimmune disease in which the immune system attacks the skin. It can occur alone or as part of systemic lupus (SLE). It is more common in women of childbearing age. There are three main forms. Acute cutaneous lupus includes the malar or "butterfly" rash over the cheeks and nose and usually occurs in people with SLE. Subacute lupus causes red ring-shaped or scaly patches on the back, chest and arms; about one in three cases is caused or worsened by common drugs such as proton pump inhibitors. Chronic lupus, most often discoid lupus, produces round scaly plaques on the face and scalp that can leave permanent scars and hair loss.
+
+A defining feature is photosensitivity: lesions appear or worsen on sun-exposed skin. Mouth and nose ulcers are also common. Diagnosis combines examination, skin biopsy and blood tests such as antinuclear antibodies (ANA) and anti-Ro.
+
+Management starts with strict sun protection (broad-spectrum sunscreen, clothing, hat) and avoiding triggers, including smoking and implicated drugs. Treatment includes topical corticosteroids or tacrolimus for localized lesions, and hydroxychloroquine as the main systemic drug. Resistant cases may need other immunosuppressants or newer biologics such as anifrolumab.
+
+Precautions: hydroxychloroquine can damage the retina, so regular eye exams are needed, and it is contraindicated in prior maculopathy or long QT. Hydroxychloroquine and fluconazole both prolong the QT interval, so combining them can cause arrhythmias; patients with lupus who need an antifungal usually receive a topical one. Follow-up with rheumatology is advised.
+
+Notice: educational text written for academic purposes, adapted from the cited sources; it does not replace evaluation by a health professional.

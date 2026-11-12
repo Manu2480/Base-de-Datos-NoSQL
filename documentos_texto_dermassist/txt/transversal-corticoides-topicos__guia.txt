@@ -1,0 +1,23 @@
+Corticoides tópicos: potencias, usos y precauciones
+Fuente: https://medlineplus.gov/spanish/ency/article/000853.htm; https://medlineplus.gov/ency/article/000869.htm; https://medlineplus.gov/spanish/ency/article/000434.htm; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Los corticoides tópicos son medicamentos antiinflamatorios de uso muy extendido en dermatología. Se clasifican por potencia, de baja a muy alta, y la elección depende de la enfermedad, la zona del cuerpo y la edad del paciente.
+
+Potencias y ejemplos:
+- Baja potencia: hidrocortisona al 1 %. Se emplea en la cara, los pliegues, los genitales y en niños y lactantes.
+- Potencia media: betametasona valerato al 0,1 %, triamcinolona. Para tronco y extremidades en eccemas.
+- Alta potencia: betametasona dipropionato, fluocinonida. Para placas gruesas de psoriasis o eccema crónico, en áreas limitadas y por periodos cortos.
+- Muy alta potencia: clobetasol al 0,05 %. Para lesiones muy resistentes, en zonas gruesas como palmas, plantas y placas de psoriasis, por tiempo breve.
+
+Principios de uso:
+- Aplicar una capa fina en la zona afectada, una o dos veces al día, durante el brote, y reducir gradualmente.
+- Las zonas con piel fina (cara, ingles, axilas, genitales) absorben más y se tratan con potencias bajas.
+- En niños, mayor superficie corporal relativa implica más absorción: se prefieren potencias bajas; el clobetasol no se usa en menores de 12 años.
+
+Efectos adversos del uso prolongado o excesivo: adelgazamiento de la piel, estrías, vasos visibles, acné, rosácea inducida, dermatitis perioral, retraso de cicatrización, infecciones y, con superficies grandes, supresión del eje suprarrenal.
+
+Contraindicaciones: infecciones cutáneas sin tratar (virales, bacterianas, fúngicas), rosácea, acné y alergia a corticoides. Usados sobre una infección fúngica, la enmascaran y empeoran.
+
+Seguir siempre la indicación del médico, sin suspender de golpe tras uso prolongado.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.

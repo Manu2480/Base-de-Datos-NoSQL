@@ -1,0 +1,22 @@
+Common drug interactions and contraindications in dermatology
+Source: Catálogo clínico del proyecto DermAssist (init/02-catalogo.js); https://medlineplus.gov/spanish/ency/article/000434.htm; https://www.mayoclinic.org/es/diseases-conditions/acne/symptoms-causes/syc-20368047
+
+Some medicines used for skin diseases can interact with each other or with other treatments, and the highest-risk combinations are worth knowing.
+
+Methotrexate (psoriasis and other inflammatory diseases): with trimethoprim-sulfamethoxazole it raises the risk of bone marrow suppression, so the combination is avoided. With NSAIDs such as ibuprofen, kidney elimination falls and toxicity rises. With penicillins such as dicloxacillin and amoxicillin-clavulanate, its clearance is reduced. It is contraindicated in pregnancy, serious liver disease and kidney failure.
+
+Doxycycline with isotretinoin: the combination increases the risk of pseudotumor cerebri (raised intracranial pressure, with severe headache and visual changes) and is avoided.
+
+Hydroxychloroquine with fluconazole: both prolong the QT interval and together can cause arrhythmias. In lupus patients who need an antifungal, a topical treatment is preferred or the risk is assessed.
+
+Pregnancy: isotretinoin, doxycycline and methotrexate are contraindicated or avoided.
+
+Antibiotics and allergy: dicloxacillin and amoxicillin-clavulanate are contraindicated in penicillin allergy; cephalexin is contraindicated in cephalosporin allergy or prior anaphylaxis to penicillins.
+
+Scabicides: permethrin is not used in infants under 2 months; ivermectin is not used under 15 kg or in pregnancy.
+
+Corticosteroids: clobetasol is not indicated in children under 12.
+
+General advice: always tell your doctor and pharmacist about every medicine, supplement and herbal product you take.
+
+Notice: educational text written for academic purposes, adapted from the cited sources; it does not replace evaluation by a health professional.

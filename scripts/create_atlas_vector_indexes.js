@@ -20,7 +20,8 @@ const chunksIndex = {
       },
       { type: "filter", path: "estrategia_chunking" },
       { type: "filter", path: "idioma" },
-      { type: "filter", path: "fecha" }
+      { type: "filter", path: "fecha" },
+      { type: "filter", path: "modelo" }
     ]
   }
 };
@@ -37,7 +38,8 @@ const imagesIndex = {
         similarity: "cosine"
       },
       { type: "filter", path: "diagnostico_id" },
-      { type: "filter", path: "paciente_id" }
+      { type: "filter", path: "paciente_id" },
+      { type: "filter", path: "modelo_embedding" }
     ]
   }
 };

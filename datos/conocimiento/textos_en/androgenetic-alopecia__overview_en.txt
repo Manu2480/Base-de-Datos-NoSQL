@@ -1,0 +1,12 @@
+Androgenetic alopecia: pattern hair loss in men and women
+Source: https://medlineplus.gov/spanish/ency/article/001177.htm; https://medlineplus.gov/spanish/ency/article/001173.htm; https://medlineplus.gov/genetics/condition/androgenetic-alopecia/; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Androgenetic alopecia, or male and female pattern hair loss, is the most common cause of hair loss. It is hereditary: hair follicles are sensitive to dihydrotestosterone (DHT) and gradually shrink (miniaturization), producing shorter, finer hairs until they stop producing visible hair. In men it causes a receding hairline and thinning at the crown. In women it causes diffuse thinning over the top of the scalp and a wider part, usually preserving the frontal hairline, and is more common after menopause. It is slowly progressive and not caused by hats, shampooing or poor hygiene. In young women with acne, excess body hair and irregular periods, polycystic ovary syndrome should be considered.
+
+Diagnosis is based on the pattern, family history and trichoscopy; blood tests may rule out iron deficiency or thyroid disease. It differs from alopecia areata (round smooth patches), telogen effluvium (diffuse shedding after stress) and scarring alopecias such as discoid lupus.
+
+Treatment slows loss and may regrow some hair, but works only while continued. Topical minoxidil 2% or 5% is used in men and women; propylene glycol in some formulas can cause contact allergy. Oral finasteride 1 mg is used in men; it is contraindicated in women who are or may become pregnant because of the risk to a male fetus, and a minority of men have sexual side effects. It also lowers PSA values. Hair transplantation is an option for selected patients.
+
+See a doctor for sudden or patchy loss, scalp redness or pain, or signs of hormonal imbalance.
+
+Notice: educational text written for academic purposes, adapted from the cited sources; it does not replace evaluation by a health professional.

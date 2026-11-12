@@ -1,0 +1,12 @@
+Melanoma: the ABCDE rule, risk factors and treatment
+Source: https://medlineplus.gov/spanish/melanoma.html; https://www.cancer.gov/espanol/tipos/piel/paciente/tratamiento-melanoma-pdq; https://www.mayoclinic.org/es/diseases-conditions/melanoma/symptoms-causes/syc-20374884
+
+Melanoma is a cancer of the melanocytes, the pigment-producing cells of the skin. It is less common than basal and squamous cell carcinoma but the most dangerous because it can spread to lymph nodes and other organs. It can arise in an existing mole or as a new pigmented spot, and occasionally in the eyes, mucous membranes or under a nail. Main risk factors are intense sun exposure and sunburns, tanning beds, fair skin, many moles or atypical moles, family or personal history of melanoma, and weakened immunity. Main types are superficial spreading, nodular, lentigo maligna and acral lentiginous (palms, soles, under nails).
+
+The ABCDE rule helps recognition: Asymmetry, irregular Borders, uneven Color, Diameter usually over 6 mm, and Evolution over time. Other clues are the "ugly duckling" sign, a new pigmented lesion in an adult, a sore that does not heal, or a dark band under a nail. Some melanomas are pink and lack pigment. Diagnosis requires excisional biopsy; pathology reports the thickness (Breslow depth).
+
+Treatment depends on stage. Early melanoma is usually cured by surgical excision with safety margins, with sentinel lymph node biopsy for thicker tumors. High-risk or advanced disease is treated with immunotherapy (anti-PD-1 drugs such as nivolumab or pembrolizumab, ipilimumab) or targeted therapy with BRAF and MEK inhibitors when a BRAF mutation is present, within a multidisciplinary team. Immunotherapy can cause immune side effects such as colitis or thyroiditis.
+
+Prevention: sunscreen SPF 30+, shade, protective clothing, no tanning beds, monthly self-examination and dermatology checks. Early detection gives an excellent prognosis.
+
+Notice: educational text written for academic purposes, adapted from the cited sources; it does not replace evaluation by a health professional.

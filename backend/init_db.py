@@ -56,6 +56,10 @@ COLLECTION_VALIDATORS = {
                     "items": {"bsonType": ["double", "int", "long"]},
                 },
                 "modelo": {"bsonType": "string"},
+                "idioma": {"bsonType": "string"},
+                "fecha": {"bsonType": "date"},
+                "fecha_ingesta": {"bsonType": "date"},
+                "contenido_sha256": {"bsonType": "string"},
             },
         }
     },

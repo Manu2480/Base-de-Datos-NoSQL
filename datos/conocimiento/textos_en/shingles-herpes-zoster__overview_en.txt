@@ -1,0 +1,12 @@
+Shingles (herpes zoster): symptoms, treatment and complications
+Source: https://www.massgeneralbrigham.org/es/health-wellness/signs-and-symptoms-of-shingles; https://www.cigna.com/es-us/knowledge-center/hw/temas-de-salud/culebrilla-hw75433; https://www.quironsalud.com/es/enfermedades-sintomas/herpes-zoster; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+Shingles is a painful rash caused by reactivation of the varicella-zoster virus, the same virus that causes chickenpox. After chickenpox the virus stays dormant in nerves and can reawaken when immunity falls. Risk is higher over age 50 and in people with weakened immunity, including those taking corticosteroids, methotrexate or biologics such as adalimumab. A person with shingles can pass the virus to someone who never had chickenpox, causing chickenpox, not shingles. A vaccine is recommended for older adults and immunocompromised people.
+
+Burning, tingling or pain on one side of the body usually appears one to five days before the rash. The rash then forms clustered blisters on red skin along a nerve pathway, typically a band on one side of the trunk or face, that crust over in two to four weeks. If it involves the eye area (tip of the nose or forehead) it is an emergency because of the risk to vision.
+
+Antiviral drugs (acyclovir, valacyclovir, famciclovir) work best when started within 72 hours of the rash. Pain is treated with analgesics and, for nerve pain, gabapentin, pregabalin or lidocaine patches. Keep blisters clean and covered, and avoid contact with pregnant women, newborns and immunosuppressed people until they crust.
+
+Complications include postherpetic neuralgia (pain lasting months, more common after age 60), eye damage, Ramsay Hunt syndrome with facial paralysis, and bacterial superinfection. A psoriasis patient on adalimumab who develops shingles should tell the doctor promptly.
+
+Notice: educational text written for academic purposes, adapted from the cited sources; it does not replace evaluation by a health professional.

@@ -1,0 +1,20 @@
+Tratamiento de la alopecia areata
+Fuente: https://www.niams.nih.gov/health-topics/alopecia-areata; Catálogo clínico del proyecto DermAssist (init/02-catalogo.js)
+
+No hay cura definitiva, pero existen tratamientos que ayudan a que el pelo vuelva a crecer y a frenar la progresión. La elección depende de la extensión, la edad y la preferencia de la persona.
+
+Opciones en pocos parches:
+- Corticoides tópicos potentes o infiltrados (inyecciones de corticoide dentro de las zonas afectadas), con buena respuesta en parches pequeños.
+- Minoxidil tópico, que puede ayudar como complemento.
+- Inmunoterapia tópica con difenciprona, que genera una reacción alérgica controlada para desviar la respuesta inmunitaria.
+
+Enfermedad extensa o grave:
+- Inhibidores de JAK, como el baricitinib, indicados en alopecia areata grave en adultos, con resultados importantes pero con riesgos de infecciones y otros efectos.
+- Corticoides orales en ciclos cortos en casos de progresión rápida, aunque la caída suele repetirse al suspenderlos.
+- Metotrexato u otros inmunosupresores, en casos seleccionados.
+
+Medidas de apoyo: pelucas, pelucas capilares, microblading, sombreros, y apoyo psicológico o grupos de pacientes, porque el impacto emocional puede ser importante. Protegerse del sol en las zonas sin pelo.
+
+Hay que tener paciencia: el recrecimiento tarda meses y puede no ser completo. Cuando el pelo vuelve, puede perderse de nuevo. Se recomienda seguimiento y evaluar trastornos asociados como los de la tiroides.
+
+Aviso: texto educativo redactado con fines académicos a partir de las fuentes citadas; no sustituye la valoración de un profesional de la salud.
